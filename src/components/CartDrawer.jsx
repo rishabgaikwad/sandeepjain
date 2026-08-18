@@ -211,34 +211,30 @@ export default function CartDrawer({
                   onChange={handleInputChange}
                   errors={errors}
                 />
+
+                <div className="cart-drawer-footer-inline">
+                  <button
+                    type="submit"
+                    className="place-order-btn"
+                    disabled={isSubmitting}
+                  >
+                    {isSubmitting ? (
+                      <>
+                        <Loader2 size={18} className="spinner" />
+                        <span>PLACING ORDER...</span>
+                      </>
+                    ) : (
+                      <>
+                        <span>PLACE ORDER</span>
+                        <ArrowRight size={18} />
+                      </>
+                    )}
+                  </button>
+                </div>
               </form>
             </>
           )}
         </div>
-
-        {/* Footer CTA */}
-        {!orderStatus && cart.length > 0 && (
-          <div className="cart-drawer-footer">
-            <button
-              type="submit"
-              form="order-form"
-              className="place-order-btn"
-              disabled={isSubmitting}
-            >
-              {isSubmitting ? (
-                <>
-                  <Loader2 size={18} className="spinner" />
-                  <span>PLACING ORDER...</span>
-                </>
-              ) : (
-                <>
-                  <span>PLACE ORDER</span>
-                  <ArrowRight size={18} />
-                </>
-              )}
-            </button>
-          </div>
-        )}
       </div>
     </div>
   );
