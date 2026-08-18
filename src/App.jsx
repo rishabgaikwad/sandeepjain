@@ -4,7 +4,7 @@ import Hero from './components/Hero';
 import CategoryFilter from './components/CategoryFilter';
 import ProductGrid from './components/ProductGrid';
 import CartDrawer from './components/CartDrawer';
-import MobileCartBar from './components/MobileCartBar';
+import FloatingCartWidget from './components/FloatingCartWidget';
 
 import productsData from './data/products';
 import { useCart } from './hooks/useCart';
@@ -28,9 +28,9 @@ export default function App() {
     cartTotal
   } = useCart();
 
+  // Non-intrusive add to cart: adds product without opening drawer
   const handleAddToCart = (product) => {
     addToCart(product);
-    setIsCartOpen(true);
   };
 
   // Extract unique categories from products
@@ -120,7 +120,7 @@ export default function App() {
         </div>
       </footer>
 
-      {/* 4. Cart Drawer (Slide-over panel) */}
+      {/* 4. Bottom Sheet Cart */}
       <CartDrawer
         isOpen={isCartOpen}
         onClose={() => setIsCartOpen(false)}
@@ -134,8 +134,8 @@ export default function App() {
         onBrowseProducts={handleScrollToProducts}
       />
 
-      {/* 5. Fixed Mobile Cart Bar */}
-      <MobileCartBar
+      {/* 5. Floating Bottom Cart Widget (Desktop & Mobile) */}
+      <FloatingCartWidget
         cartCount={cartItemCount}
         cartTotal={cartTotal}
         onOpenCart={() => setIsCartOpen(true)}

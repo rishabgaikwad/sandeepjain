@@ -32,15 +32,25 @@ export default function CartDrawer({
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [orderStatus, setOrderStatus] = useState(null);
 
-  // Close on Escape key
+  // Close on Escape key and handle body scroll locking
   useEffect(() => {
     const handleKeyDown = (e) => {
       if (e.key === 'Escape' && isOpen) {
         onClose();
       }
     };
-    window.addEventListener('keydown', handleKeyDown);
-    return () => window.removeEventListener('keydown', handleKeyDown);
+
+    if (isOpen) {
+      document.body.style.overflow = 'hidden';
+      window.addEventListener('keydown', handleKeyDown);
+    } else {
+      document.body.style.overflow = '';
+    }
+
+    return () => {
+      document.body.style.overflow = '';
+      window.removeEventListener('keydown', handleKeyDown);
+    };
   }, [isOpen, onClose]);
 
   const handleInputChange = (e) => {
