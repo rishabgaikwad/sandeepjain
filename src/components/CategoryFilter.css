@@ -1,0 +1,41 @@
+.category-filter-container {
+  margin-bottom: 2rem;
+  width: 100%;
+}
+
+.category-scroll {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  overflow-x: auto;
+  padding: 0.25rem 0.25rem 0.75rem 0.25rem;
+  scrollbar-width: none; /* Firefox */
+}
+
+.category-scroll::-webkit-scrollbar {
+  display: none; /* Chrome/Safari */
+}
+
+.category-chip {
+  padding: 0.5rem 1.1rem;
+  background-color: var(--bg-surface);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-full);
+  color: var(--text-secondary);
+  font-size: 0.875rem;
+  font-weight: 500;
+  white-space: nowrap;
+  transition: var(--transition-fast);
+}
+
+.category-chip:hover {
+  border-color: var(--border-strong);
+  color: var(--text-primary);
+}
+
+.category-chip.active {
+  background-color: var(--accent-emerald-soft);
+  border-color: var(--accent-emerald);
+  color: var(--accent-emerald);
+  font-weight: 600;
+}

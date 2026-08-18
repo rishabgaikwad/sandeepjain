@@ -1,0 +1,68 @@
+.app-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  position: relative;
+}
+
+.main-content {
+  flex: 1;
+  max-width: 1280px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 3rem 1.5rem 6rem 1.5rem;
+}
+
+.catalogue-header {
+  margin-bottom: 2rem;
+}
+
+.catalogue-title-area {
+  margin-bottom: 1.25rem;
+}
+
+.catalogue-title {
+  font-size: 2rem;
+  font-weight: 800;
+  color: var(--text-primary);
+  letter-spacing: -0.01em;
+}
+
+.catalogue-subtitle {
+  font-size: 0.875rem;
+  color: var(--text-secondary);
+  margin-top: 0.25rem;
+}
+
+.site-footer {
+  background-color: var(--bg-surface);
+  border-top: 1px solid var(--border-subtle);
+  padding: 2.5rem 1.5rem;
+  text-align: center;
+  color: var(--text-muted);
+  font-size: 0.84375rem;
+}
+
+.footer-container {
+  max-width: 1280px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  align-items: center;
+}
+
+.footer-tagline {
+  font-size: 0.75rem;
+  opacity: 0.7;
+}
+
+@media (max-width: 768px) {
+  .main-content {
+    padding: 2rem 1rem 7rem 1rem;
+  }
+
+  .catalogue-title {
+    font-size: 1.5rem;
+  }
+}
