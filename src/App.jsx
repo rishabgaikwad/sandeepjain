@@ -7,12 +7,14 @@ import CartDrawer from './components/CartDrawer';
 import FloatingCartWidget from './components/FloatingCartWidget';
 
 import productsData from './data/products';
+import { CATEGORY_STRUCTURE } from './data/categories';
 import { useCart } from './hooks/useCart';
 import storeConfig from './config/storeConfig';
 import './App.css';
 
 export default function App() {
   const [selectedCategory, setSelectedCategory] = useState('All');
+  const [selectedSubCategory, setSelectedSubCategory] = useState(null);
   const [searchTerm, setSearchTerm] = useState('');
   const [isSearchOpen, setIsSearchOpen] = useState(false);
   const [isCartOpen, setIsCartOpen] = useState(false);
@@ -33,34 +35,44 @@ export default function App() {
     addToCart(product);
   };
 
-  // Extract unique categories from products
-  const categories = useMemo(() => {
-    const set = new Set();
-    productsData.forEach((p) => {
-      if (p.category) set.add(p.category);
-    });
-    return Array.from(set);
-  }, []);
+  // Handle Main Category Change - automatically resets subcategory
+  const handleSelectCategory = (categoryName) => {
+    setSelectedCategory(categoryName);
+    setSelectedSubCategory(null);
+  };
 
-  // Filter products by search term and category
+  // Handle Sub Category Change
+  const handleSelectSubCategory = (subCategoryName) => {
+    setSelectedSubCategory(subCategoryName);
+  };
+
+  // Filter products by search term, main category, and sub category
   const filteredProducts = useMemo(() => {
     return productsData.filter((product) => {
+      // Main Category Match
       const matchesCategory =
         selectedCategory === 'All' || product.category === selectedCategory;
 
+      // Sub Category Match
+      const matchesSubCategory =
+        selectedSubCategory === null || product.subCategory === selectedSubCategory;
+
+      // Search Term Match
       const term = searchTerm.trim().toLowerCase();
       const matchesSearch =
         !term ||
         product.name.toLowerCase().includes(term) ||
         product.description.toLowerCase().includes(term) ||
-        product.category.toLowerCase().includes(term);
+        (product.category && product.category.toLowerCase().includes(term)) ||
+        (product.subCategory && product.subCategory.toLowerCase().includes(term));
 
-      return matchesCategory && matchesSearch;
+      return matchesCategory && matchesSubCategory && matchesSearch;
     });
-  }, [selectedCategory, searchTerm]);
+  }, [selectedCategory, selectedSubCategory, searchTerm]);
 
   const handleResetFilters = () => {
     setSelectedCategory('All');
+    setSelectedSubCategory(null);
     setSearchTerm('');
   };
 
@@ -89,17 +101,48 @@ export default function App() {
       {/* 3. Main Catalogue Area */}
       <main id="products-section" className="main-content">
         <div className="catalogue-header">
+          {/* Dedicated Search bar directly above 'Our Products' */}
+          <div className="catalogue-search-bar">
+            <div className="search-input-wrapper">
+              <span className="search-input-icon">🔍</span>
+              <input
+                type="text"
+                placeholder="Search products by model, feature or category..."
+                value={searchTerm}
+                onChange={(e) => setSearchTerm(e.target.value)}
+                className="catalogue-search-input"
+              />
+              {searchTerm && (
+                <button
+                  className="search-clear-btn"
+                  onClick={() => setSearchTerm('')}
+                  aria-label="Clear search"
+                >
+                  ✕
+                </button>
+              )}
+            </div>
+          </div>
+
           <div className="catalogue-title-area">
             <h2 className="catalogue-title">Our Products</h2>
             <p className="catalogue-subtitle">
               {filteredProducts.length} {filteredProducts.length === 1 ? 'item' : 'items'} available
+              {selectedCategory !== 'All' && (
+                <span>
+                  {' '}• <strong>{selectedCategory}</strong>
+                  {selectedSubCategory && <span> &rsaquo; <em>{selectedSubCategory}</em></span>}
+                </span>
+              )}
             </p>
           </div>
 
           <CategoryFilter
-            categories={categories}
+            categoryStructure={CATEGORY_STRUCTURE}
             selectedCategory={selectedCategory}
-            onSelectCategory={setSelectedCategory}
+            selectedSubCategory={selectedSubCategory}
+            onSelectCategory={handleSelectCategory}
+            onSelectSubCategory={handleSelectSubCategory}
           />
         </div>
 
@@ -108,7 +151,7 @@ export default function App() {
           products={filteredProducts}
           onAddToCart={handleAddToCart}
           onResetFilters={handleResetFilters}
-          hasFilters={selectedCategory !== 'All' || searchTerm.trim() !== ''}
+          hasFilters={selectedCategory !== 'All' || selectedSubCategory !== null || searchTerm.trim() !== ''}
         />
       </main>
 

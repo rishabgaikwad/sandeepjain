@@ -1,10 +1,9 @@
 import React, { useState } from 'react';
-import { Plus, Check, ImageOff } from 'lucide-react';
+import { Plus, Check } from 'lucide-react';
 import { formatPrice } from '../utils/priceFormatter';
 import './ProductCard.css';
 
 export default function ProductCard({ product, onAddToCart }) {
-  const [imageError, setImageError] = useState(false);
   const [isAdded, setIsAdded] = useState(false);
 
   const handleAdd = () => {
@@ -17,30 +16,25 @@ export default function ProductCard({ product, onAddToCart }) {
 
   return (
     <div className="product-card">
-      <div className="product-image-container">
-        {!imageError ? (
-          <img
-            src={product.image}
-            alt={product.name}
-            loading="lazy"
-            onError={() => setImageError(true)}
-            className="product-image"
-          />
-        ) : (
-          <div className="product-image-fallback">
-            <ImageOff size={32} />
-            <span>Image Unavailable</span>
-          </div>
-        )}
-        <span className="product-category-tag">{product.category}</span>
+      <div className="product-card-header">
+        <span className="product-category-badge">
+          {product.category}
+          {product.subCategory ? ` • ${product.subCategory}` : ''}
+        </span>
       </div>
 
       <div className="product-info">
         <h3 className="product-title">{product.name}</h3>
-        <p className="product-description">{product.description}</p>
-        
+        {product.description ? (
+          <p className="product-description">{product.description}</p>
+        ) : null}
+
         <div className="product-card-footer">
-          <span className="product-price">{formatPrice(product.price)}</span>
+          <div className="price-wrapper">
+            <span className="price-label">MRP</span>
+            <span className="product-price">{formatPrice(product.price)}</span>
+          </div>
+
           <button
             className={`add-to-cart-btn ${isAdded ? 'added' : ''}`}
             onClick={handleAdd}
