@@ -28,6 +28,11 @@ export default function App() {
     cartTotal
   } = useCart();
 
+  const handleAddToCart = (product) => {
+    addToCart(product);
+    setIsCartOpen(true);
+  };
+
   // Extract unique categories from products
   const categories = useMemo(() => {
     const set = new Set();
@@ -101,7 +106,7 @@ export default function App() {
         {/* Product Grid */}
         <ProductGrid
           products={filteredProducts}
-          onAddToCart={addToCart}
+          onAddToCart={handleAddToCart}
           onResetFilters={handleResetFilters}
           hasFilters={selectedCategory !== 'All' || searchTerm.trim() !== ''}
         />
