@@ -16,7 +16,7 @@ export default function Header({
       <div className="header-container">
         {/* Brand Logo */}
         <a href="#hero" className="brand-logo">
-          <span className="logo-badge">A</span>
+          <span className="logo-badge">S</span>
           <span className="logo-text">{storeConfig.storeName}</span>
         </a>
 
