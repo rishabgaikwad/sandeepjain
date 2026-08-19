@@ -1,94 +1,48 @@
 import React from 'react';
-import { ShoppingBag, Search, X } from 'lucide-react';
+import { ShoppingCart } from 'lucide-react';
 import storeConfig from '../config/storeConfig';
 import './Header.css';
 
 export default function Header({
-  cartCount,
-  onOpenCart,
-  searchTerm,
-  setSearchTerm,
-  isSearchOpen,
-  setIsSearchOpen
+  activeTab,
+  setActiveTab,
+  cartCount
 }) {
   return (
     <header className="site-header">
       <div className="header-container">
         {/* Brand Logo */}
-        <a href="#hero" className="brand-logo">
+        <button className="brand-logo" onClick={() => setActiveTab('home')}>
           <span className="logo-badge">S</span>
           <span className="logo-text">{storeConfig.storeName}</span>
-        </a>
+        </button>
 
-        {/* Desktop Search Bar */}
-        <div className="header-search-desktop">
-          <Search size={18} className="search-icon" />
-          <input
-            type="text"
-            placeholder="Search products, categories..."
-            value={searchTerm}
-            onChange={(e) => setSearchTerm(e.target.value)}
-            id="desktop-search-input"
-          />
-          {searchTerm && (
-            <button
-              className="clear-search-btn"
-              onClick={() => setSearchTerm('')}
-              aria-label="Clear search"
-            >
-              <X size={16} />
-            </button>
-          )}
-        </div>
-
-        {/* Header Actions */}
-        <div className="header-actions">
-          {/* Mobile Search Toggle */}
+        {/* Navigation Tabs (Desktop & Mobile Header) */}
+        <nav className="header-nav">
           <button
-            className="mobile-search-toggle"
-            onClick={() => setIsSearchOpen(!isSearchOpen)}
-            aria-label="Toggle search"
+            className={`nav-tab ${activeTab === 'home' ? 'active' : ''}`}
+            onClick={() => setActiveTab('home')}
           >
-            {isSearchOpen ? <X size={20} /> : <Search size={20} />}
+            Home
           </button>
-
-          {/* Cart Trigger Button */}
           <button
-            className="cart-trigger-btn"
-            onClick={onOpenCart}
-            aria-label={`Open Cart with ${cartCount} items`}
-            id="open-cart-btn"
+            className={`nav-tab ${activeTab === 'products' ? 'active' : ''}`}
+            onClick={() => setActiveTab('products')}
           >
-            <ShoppingBag size={20} />
-            <span className="cart-label">Cart</span>
-            {cartCount > 0 && <span className="cart-badge">{cartCount}</span>}
+            Products
           </button>
-        </div>
+          <button
+            className={`nav-tab cart-nav-tab ${activeTab === 'cart' ? 'active' : ''}`}
+            onClick={() => setActiveTab('cart')}
+          >
+            <span>Cart</span>
+            <div className="header-cart-icon-wrapper">
+              <ShoppingCart size={18} />
+              {cartCount > 0 && <span className="header-cart-badge">{cartCount}</span>}
+            </div>
+          </button>
+        </nav>
       </div>
-
-      {/* Mobile Search Overlay */}
-      {isSearchOpen && (
-        <div className="mobile-search-bar">
-          <Search size={18} className="search-icon" />
-          <input
-            type="text"
-            placeholder="Search catalog..."
-            value={searchTerm}
-            onChange={(e) => setSearchTerm(e.target.value)}
-            autoFocus
-            id="mobile-search-input"
-          />
-          {searchTerm && (
-            <button
-              className="clear-search-btn"
-              onClick={() => setSearchTerm('')}
-              aria-label="Clear search"
-            >
-              <X size={16} />
-            </button>
-          )}
-        </div>
-      )}
     </header>
   );
 }

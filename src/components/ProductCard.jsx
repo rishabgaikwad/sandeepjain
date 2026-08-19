@@ -1,5 +1,6 @@
 import React from 'react';
 import { Plus, Minus } from 'lucide-react';
+import ProductVisual from './ProductVisual';
 import { formatPrice } from '../utils/priceFormatter';
 import './ProductCard.css';
 
@@ -12,39 +13,35 @@ export default function ProductCard({
 }) {
   return (
     <div className="product-card">
-      <div className="product-card-header">
-        <span className="product-category-badge">
-          {product.category}
-          {product.subCategory ? ` • ${product.subCategory}` : ''}
-        </span>
-      </div>
+      {/* Imageless Premium Product Visual Panel */}
+      <ProductVisual
+        category={product.category}
+        subCategory={product.subCategory}
+        productName={product.name}
+        size="medium"
+      />
 
+      {/* Product Information & Price */}
       <div className="product-info">
-        <h3 className="product-title">{product.name}</h3>
-        {product.description ? (
-          <p className="product-description">{product.description}</p>
-        ) : null}
+        <h3 className="product-title" title={product.name}>
+          {product.name}
+        </h3>
 
         <div className="product-card-footer">
-          <div className="price-wrapper">
-            <span className="price-label">MRP</span>
-            <span className="product-price">{formatPrice(product.price)}</span>
-          </div>
+          <span className="product-price">{formatPrice(product.price)}</span>
 
           {cartQuantity > 0 ? (
             <div className="product-qty-control">
               <button
-                className="product-qty-btn"
+                className="qty-action-btn"
                 onClick={() => onDecreaseQuantity(product.id)}
                 aria-label="Decrease quantity"
               >
                 <Minus size={14} />
               </button>
-
-              <span className="product-qty-value">{cartQuantity}</span>
-
+              <span className="qty-count">{cartQuantity}</span>
               <button
-                className="product-qty-btn"
+                className="qty-action-btn"
                 onClick={() => onIncreaseQuantity(product.id)}
                 aria-label="Increase quantity"
               >
@@ -53,12 +50,11 @@ export default function ProductCard({
             </div>
           ) : (
             <button
-              className="add-to-cart-btn"
+              className="add-btn-circle"
               onClick={() => onAddToCart(product)}
               aria-label={`Add ${product.name} to cart`}
             >
-              <Plus size={16} />
-              <span>Add to Cart</span>
+              <Plus size={18} />
             </button>
           )}
         </div>
