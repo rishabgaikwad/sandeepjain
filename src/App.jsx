@@ -1,4 +1,4 @@
-import React, { useState, useMemo } from 'react';
+import React, { useState, useEffect, useMemo } from 'react';
 import Header from './components/Header';
 import BottomNav from './components/BottomNav';
 import HomeView from './components/HomeView';
@@ -27,6 +27,37 @@ export default function App() {
     cartItemCount,
     cartTotal
   } = useCart();
+
+  // History API & Hash Integration for phone back button compatibility
+  useEffect(() => {
+    const initialHash = window.location.hash.replace('#', '');
+    if (['home', 'products', 'cart'].includes(initialHash)) {
+      setActiveTab(initialHash);
+    } else {
+      window.history.replaceState({ tab: 'home' }, '', '#home');
+    }
+
+    const handlePopState = (e) => {
+      const currentHash = window.location.hash.replace('#', '');
+      if (['home', 'products', 'cart'].includes(currentHash)) {
+        setActiveTab(currentHash);
+      } else if (e.state && e.state.tab) {
+        setActiveTab(e.state.tab);
+      } else {
+        setActiveTab('home');
+      }
+    };
+
+    window.addEventListener('popstate', handlePopState);
+    return () => window.removeEventListener('popstate', handlePopState);
+  }, []);
+
+  const handleTabChange = (newTab) => {
+    if (newTab !== activeTab) {
+      setActiveTab(newTab);
+      window.history.pushState({ tab: newTab }, '', `#${newTab}`);
+    }
+  };
 
   // Map product IDs to current cart quantity
   const cartMap = useMemo(() => {
@@ -57,7 +88,7 @@ export default function App() {
       {/* 1. Header Navigation */}
       <Header
         activeTab={activeTab}
-        setActiveTab={setActiveTab}
+        setActiveTab={handleTabChange}
         cartCount={cartItemCount}
       />
 
@@ -71,7 +102,7 @@ export default function App() {
             onAddToCart={addToCart}
             onIncreaseQuantity={increaseQuantity}
             onDecreaseQuantity={decreaseQuantity}
-            onNavigateToProducts={() => setActiveTab('products')}
+            onNavigateToProducts={() => handleTabChange('products')}
             onSelectCategory={handleSelectCategory}
             searchTerm={searchTerm}
             setSearchTerm={setSearchTerm}
@@ -105,7 +136,7 @@ export default function App() {
             onDecreaseQuantity={decreaseQuantity}
             onRemoveFromCart={removeFromCart}
             onClearCart={clearCart}
-            onNavigateToProducts={() => setActiveTab('products')}
+            onNavigateToProducts={() => handleTabChange('products')}
           />
         )}
       </main>
@@ -121,7 +152,7 @@ export default function App() {
       {/* 4. Mobile Fixed Bottom Navigation Bar */}
       <BottomNav
         activeTab={activeTab}
-        setActiveTab={setActiveTab}
+        setActiveTab={handleTabChange}
         cartCount={cartItemCount}
       />
     </div>

@@ -2,7 +2,8 @@ import storeConfig from '../config/storeConfig';
 import { formatOrderForWhatsApp } from './orderFormatter';
 
 /**
- * Generates encoded WhatsApp link and opens it in a new window/tab.
+ * Generates encoded WhatsApp link and opens it cleanly in a new target window
+ * without mutating window.location.href or corrupting browser history.
  * @param {Object} order - Canonical order object
  * @returns {boolean} True if successfully attempted to open URL
  */
@@ -13,15 +14,23 @@ export const openWhatsAppOrder = (order) => {
   const whatsappUrl = `https://wa.me/${rawNumber}?text=${encodedText}`;
 
   try {
-    const newWindow = window.open(whatsappUrl, '_blank');
-    if (!newWindow) {
-      // Fallback for pop-up blockers if window.open returns null
-      window.location.href = whatsappUrl;
-    }
+    // Create ephemeral anchor element with target="_blank" to prevent tab history corruption
+    const link = document.createElement('a');
+    link.href = whatsappUrl;
+    link.target = '_blank';
+    link.rel = 'noopener noreferrer';
+    document.body.appendChild(link);
+    link.click();
+
+    setTimeout(() => {
+      if (document.body.contains(link)) {
+        document.body.removeChild(link);
+      }
+    }, 100);
+
     return true;
   } catch (error) {
     console.error('Failed to open WhatsApp URL:', error);
-    window.location.href = whatsappUrl;
     return false;
   }
 };
