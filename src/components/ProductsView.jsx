@@ -1,6 +1,7 @@
 import React, { useState, useMemo } from 'react';
-import { Search, Filter, SlidersHorizontal, ChevronLeft, ChevronRight, RotateCcw, SearchX } from 'lucide-react';
+import { Search, SlidersHorizontal, ChevronLeft, ChevronRight, RotateCcw, SearchX } from 'lucide-react';
 import ProductCard from './ProductCard';
+import FilterModal from './FilterModal';
 import './ProductsView.css';
 
 export default function ProductsView({
@@ -25,7 +26,7 @@ export default function ProductsView({
   const [appliedMaxPrice, setAppliedMaxPrice] = useState(null);
   const [currentPage, setCurrentPage] = useState(1);
   const [itemsPerPage, setItemsPerPage] = useState(20);
-  const [isMobileFilterOpen, setIsMobileFilterOpen] = useState(false);
+  const [isFilterModalOpen, setIsFilterModalOpen] = useState(false);
 
   // Subcategories list for currently selected main category
   const currentSubcategories = useMemo(() => {
@@ -34,25 +35,30 @@ export default function ProductsView({
     return found ? found.subcategories : [];
   }, [categoryStructure, selectedCategory]);
 
-  // Apply search, category, subcategory, price range filtering
+  // Calculate count of active filters for badge
+  const activeFilterCount = useMemo(() => {
+    let count = 0;
+    if (selectedCategory !== 'All') count++;
+    if (selectedSubCategory !== null) count++;
+    if (appliedMinPrice !== null || appliedMaxPrice !== null) count++;
+    return count;
+  }, [selectedCategory, selectedSubCategory, appliedMinPrice, appliedMaxPrice]);
+
+  // Apply filtering
   const filteredProducts = useMemo(() => {
     return products.filter((product) => {
-      // Category Filter
       if (selectedCategory !== 'All' && product.category !== selectedCategory) {
         return false;
       }
-      // Subcategory Filter
       if (selectedSubCategory !== null && product.subCategory !== selectedSubCategory) {
         return false;
       }
-      // Price Range Filter
       if (appliedMinPrice !== null && product.price < appliedMinPrice) {
         return false;
       }
       if (appliedMaxPrice !== null && product.price > appliedMaxPrice) {
         return false;
       }
-      // Search Term Filter
       if (searchTerm.trim() !== '') {
         const query = searchTerm.toLowerCase().trim();
         const matchesName = product.name.toLowerCase().includes(query);
@@ -111,7 +117,7 @@ export default function ProductsView({
 
   return (
     <div className="products-view">
-      {/* Top Search & Filter Bar */}
+      {/* Top Search & Mobile Action Bar */}
       <div className="products-search-bar">
         <div className="products-search-input-wrapper">
           <Search size={18} className="search-icon" />
@@ -127,28 +133,30 @@ export default function ProductsView({
         </div>
 
         <button
-          className="mobile-filter-btn"
-          onClick={() => setIsMobileFilterOpen(!isMobileFilterOpen)}
+          className="mobile-filter-trigger-btn"
+          onClick={() => setIsFilterModalOpen(true)}
         >
           <SlidersHorizontal size={18} />
           <span>Filters</span>
+          {activeFilterCount > 0 && (
+            <span className="filter-count-badge">({activeFilterCount})</span>
+          )}
         </button>
       </div>
 
       {/* Main Layout Grid */}
       <div className="products-layout">
-        {/* Left Sidebar Filter Panel */}
-        <aside className={`filter-sidebar ${isMobileFilterOpen ? 'mobile-open' : ''}`}>
+        {/* Desktop Left Sidebar Filter Panel */}
+        <aside className="desktop-filter-sidebar">
           <div className="sidebar-header">
             <h4>Filters</h4>
-            {(selectedCategory !== 'All' || selectedSubCategory !== null || appliedMinPrice !== null || appliedMaxPrice !== null || searchTerm) && (
+            {activeFilterCount > 0 && (
               <button className="clear-link-btn" onClick={handleClearAll}>
                 Clear All
               </button>
             )}
           </div>
 
-          {/* Category Dropdown */}
           <div className="filter-group">
             <label className="filter-label">Category</label>
             <select
@@ -168,7 +176,6 @@ export default function ProductsView({
             </select>
           </div>
 
-          {/* Sort By Dropdown */}
           <div className="filter-group">
             <label className="filter-label">Sort by</label>
             <select
@@ -182,7 +189,6 @@ export default function ProductsView({
             </select>
           </div>
 
-          {/* Price Range Filter */}
           <form className="filter-group" onSubmit={handleApplyPrice}>
             <label className="filter-label">Price Range</label>
             <div className="price-inputs-row">
@@ -207,7 +213,6 @@ export default function ProductsView({
             </button>
           </form>
 
-          {/* Subcategory Checkboxes (if category selected) */}
           {currentSubcategories.length > 0 && (
             <div className="filter-group">
               <label className="filter-label">Subcategories</label>
@@ -215,7 +220,7 @@ export default function ProductsView({
                 <label className="checkbox-item">
                   <input
                     type="radio"
-                    name="subcat"
+                    name="subcat-desktop"
                     checked={selectedSubCategory === null}
                     onChange={() => {
                       onSelectSubCategory(null);
@@ -228,7 +233,7 @@ export default function ProductsView({
                   <label key={sub} className="checkbox-item">
                     <input
                       type="radio"
-                      name="subcat"
+                      name="subcat-desktop"
                       checked={selectedSubCategory === sub}
                       onChange={() => {
                         onSelectSubCategory(sub);
@@ -243,9 +248,9 @@ export default function ProductsView({
           )}
         </aside>
 
-        {/* Right Product Grid & Results Header */}
+        {/* Right Main Product Area */}
         <main className="products-main">
-          {/* Results Metadata Header */}
+          {/* Results Count Header */}
           <div className="results-header">
             <span className="results-count-text">
               Showing <strong>{startItemNum} - {endItemNum}</strong> of <strong>{sortedProducts.length}</strong> products
@@ -257,10 +262,10 @@ export default function ProductsView({
             <div className="no-products-found">
               <SearchX size={48} className="no-icon" />
               <h3>No Products Found</h3>
-              <p>Try adjusting your search query, category, or price range filters.</p>
+              <p>Try changing your search query, category, or price range filters.</p>
               <button className="reset-btn" onClick={handleClearAll}>
                 <RotateCcw size={16} />
-                <span>Reset Filters</span>
+                <span>Clear Filters</span>
               </button>
             </div>
           ) : (
@@ -285,53 +290,69 @@ export default function ProductsView({
                 className="page-btn"
                 disabled={safeCurrentPage === 1}
                 onClick={() => setCurrentPage((p) => Math.max(p - 1, 1))}
+                aria-label="Previous Page"
               >
-                <ChevronLeft size={18} />
+                <ChevronLeft size={20} />
               </button>
 
-              {Array.from({ length: totalPages }, (_, i) => i + 1)
-                .filter((p) => p === 1 || p === totalPages || Math.abs(p - safeCurrentPage) <= 1)
-                .map((page, index, arr) => {
-                  const prevPage = arr[index - 1];
-                  const hasGap = prevPage && page - prevPage > 1;
+              {/* Desktop Pagination Page Numbers */}
+              <div className="desktop-page-numbers">
+                {Array.from({ length: totalPages }, (_, i) => i + 1)
+                  .filter((p) => p === 1 || p === totalPages || Math.abs(p - safeCurrentPage) <= 1)
+                  .map((page, index, arr) => {
+                    const prevPage = arr[index - 1];
+                    const hasGap = prevPage && page - prevPage > 1;
 
-                  return (
-                    <React.Fragment key={page}>
-                      {hasGap && <span className="pagination-gap">...</span>}
-                      <button
-                        className={`page-number-btn ${safeCurrentPage === page ? 'active' : ''}`}
-                        onClick={() => setCurrentPage(page)}
-                      >
-                        {page}
-                      </button>
-                    </React.Fragment>
-                  );
-                })}
+                    return (
+                      <React.Fragment key={page}>
+                        {hasGap && <span className="pagination-gap">...</span>}
+                        <button
+                          className={`page-number-btn ${safeCurrentPage === page ? 'active' : ''}`}
+                          onClick={() => setCurrentPage(page)}
+                        >
+                          {page}
+                        </button>
+                      </React.Fragment>
+                    );
+                  })}
+              </div>
+
+              {/* Mobile Compact Page Indicator < 1 / 31 > */}
+              <div className="mobile-page-indicator">
+                <span><strong>{safeCurrentPage}</strong> / {totalPages}</span>
+              </div>
 
               <button
                 className="page-btn"
                 disabled={safeCurrentPage === totalPages}
                 onClick={() => setCurrentPage((p) => Math.min(p + 1, totalPages))}
+                aria-label="Next Page"
               >
-                <ChevronRight size={18} />
+                <ChevronRight size={20} />
               </button>
-
-              <select
-                className="per-page-select"
-                value={itemsPerPage}
-                onChange={(e) => {
-                  setItemsPerPage(Number(e.target.value));
-                  setCurrentPage(1);
-                }}
-              >
-                <option value={12}>12 per page</option>
-                <option value={20}>20 per page</option>
-                <option value={36}>36 per page</option>
-              </select>
             </div>
           )}
         </main>
       </div>
+
+      {/* Mobile Bottom Sheet Filter Modal */}
+      <FilterModal
+        isOpen={isFilterModalOpen}
+        onClose={() => setIsFilterModalOpen(false)}
+        categoryStructure={categoryStructure}
+        selectedCategory={selectedCategory}
+        selectedSubCategory={selectedSubCategory}
+        onSelectCategory={onSelectCategory}
+        onSelectSubCategory={onSelectSubCategory}
+        sortBy={sortBy}
+        setSortBy={setSortBy}
+        minPrice={minPrice}
+        setMinPrice={setMinPrice}
+        maxPrice={maxPrice}
+        setMaxPrice={setMaxPrice}
+        onApplyFilters={() => setCurrentPage(1)}
+        onClearAll={handleClearAll}
+      />
     </div>
   );
 }

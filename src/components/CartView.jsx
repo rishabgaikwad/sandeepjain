@@ -86,10 +86,10 @@ export default function CartView({
       createdAt: new Date().toISOString()
     };
 
-    // Send EmailJS
+    // Step 1: Send EmailJS notification
     const emailResult = await sendOrderEmail(canonicalOrder);
 
-    // Open WhatsApp
+    // Step 2: Open WhatsApp
     const whatsappSuccess = openWhatsAppOrder(canonicalOrder);
 
     setIsSubmitting(false);
@@ -174,9 +174,9 @@ export default function CartView({
                       <button
                         className="item-remove-btn"
                         onClick={() => onRemoveFromCart(item.id)}
-                        aria-label="Remove item"
+                        aria-label={`Remove ${item.name} from cart`}
                       >
-                        <Trash2 size={16} />
+                        <Trash2 size={18} />
                       </button>
                     </div>
 
@@ -189,15 +189,17 @@ export default function CartView({
                         <button
                           className="qty-btn"
                           onClick={() => onDecreaseQuantity(item.id)}
+                          aria-label="Decrease quantity"
                         >
-                          <Minus size={14} />
+                          <Minus size={16} />
                         </button>
                         <span className="qty-val">{item.quantity}</span>
                         <button
                           className="qty-btn"
                           onClick={() => onIncreaseQuantity(item.id)}
+                          aria-label="Increase quantity"
                         >
-                          <Plus size={14} />
+                          <Plus size={16} />
                         </button>
                       </div>
                     </div>
@@ -209,7 +211,7 @@ export default function CartView({
 
           {/* Security Banner */}
           <div className="security-banner">
-            <ShieldCheck size={20} className="shield-icon" />
+            <ShieldCheck size={22} className="shield-icon" />
             <div>
               <strong>Secure & Easy Ordering</strong>
               <p>Your order will be sent to us on WhatsApp for instant confirmation.</p>
@@ -267,6 +269,7 @@ export default function CartView({
               <label>Phone Number (WhatsApp) *</label>
               <input
                 type="tel"
+                inputMode="tel"
                 name="phone"
                 placeholder="e.g. +91 98765 43210"
                 value={customerData.phone}

@@ -23,6 +23,7 @@
   font-size: 1.25rem;
   font-weight: 700;
   color: var(--text-primary);
+  min-height: 44px;
 }
 
 .cart-count-badge {
@@ -65,7 +66,11 @@
 }
 
 .browse-btn {
-  padding: 0.75rem 1.75rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 48px;
+  padding: 0 1.75rem;
   background-color: var(--accent-emerald);
   color: #ffffff;
   font-weight: 700;
@@ -152,12 +157,19 @@
 }
 
 .item-remove-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 36px;
+  min-height: 36px;
   color: var(--text-muted);
+  border-radius: var(--radius-sm);
   transition: var(--transition-fast);
 }
 
 .item-remove-btn:hover {
   color: var(--danger);
+  background-color: var(--danger-soft);
 }
 
 .item-qty-label {
@@ -192,8 +204,8 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 26px;
-  height: 26px;
+  min-width: 32px;
+  min-height: 32px;
   color: var(--text-secondary);
 }
 
@@ -291,14 +303,15 @@
 
 .form-group input, .form-group textarea {
   width: 100%;
-  padding: 0.65rem 0.85rem;
+  padding: 0.75rem 0.85rem;
   background-color: var(--bg-input);
   border: 1px solid var(--border-subtle);
   border-radius: var(--radius-sm);
-  font-size: 0.875rem;
+  font-size: 1rem; /* 16px prevents iOS Safari auto-zoom */
   color: var(--text-primary);
   outline: none;
   transition: var(--transition-fast);
+  min-height: 44px;
 }
 
 .form-group input:focus, .form-group textarea:focus {
@@ -321,7 +334,8 @@
   justify-content: center;
   gap: 0.6rem;
   width: 100%;
-  padding: 0.9375rem;
+  min-height: 50px;
+  padding: 0.85rem 1.25rem;
   background-color: var(--accent-emerald);
   color: #ffffff;
   font-weight: 700;
@@ -355,5 +369,14 @@
 @media (max-width: 640px) {
   .cart-view-container {
     padding: 1rem 1rem 5rem 1rem;
+  }
+
+  .cart-item-visual-thumb {
+    width: 54px;
+    height: 54px;
+  }
+
+  .section-card {
+    padding: 1.15rem;
   }
 }

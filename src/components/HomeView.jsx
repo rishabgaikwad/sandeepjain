@@ -15,8 +15,8 @@ export default function HomeView({
   searchTerm,
   setSearchTerm
 }) {
-  // Top 4 featured products for Home showcase
-  const topProducts = products.slice(0, 4);
+  // Top 6 featured products for Home showcase carousel
+  const topProducts = products.slice(0, 6);
 
   // Featured Category Circle Chips matching existing catalogue main categories
   const categoryChips = [
@@ -45,7 +45,7 @@ export default function HomeView({
     <div className="home-view">
       {/* Search Input Bar */}
       <form className="home-search-bar" onSubmit={handleSearchSubmit}>
-        <Search size={18} className="search-bar-icon" />
+        <Search size={20} className="search-bar-icon" />
         <input
           type="text"
           placeholder="Search products, categories..."
@@ -56,13 +56,13 @@ export default function HomeView({
           }}
         />
         {searchTerm && (
-          <button type="button" className="search-go-btn" onClick={onNavigateToProducts}>
+          <button type="button" className="search-go-btn" onClick={onNavigateToProducts} aria-label="Submit search">
             <ArrowRight size={16} />
           </button>
         )}
       </form>
 
-      {/* Premium Imageless Hero Banner */}
+      {/* Compact Premium Imageless Hero Banner */}
       <div className="hero-banner">
         <div className="hero-content">
           <h2>Premium Kitchen Appliances<br />Built for Performance</h2>
@@ -71,7 +71,7 @@ export default function HomeView({
           </button>
         </div>
         <div className="hero-graphic">
-          <Flame size={72} className="hero-flame-icon" />
+          <Flame size={64} className="hero-flame-icon" />
         </div>
       </div>
 
@@ -115,7 +115,7 @@ export default function HomeView({
         </div>
       </div>
 
-      {/* Top Products Section */}
+      {/* Top Products Horizontal Carousel */}
       <div className="home-section">
         <div className="section-header">
           <h3>Top Products</h3>
@@ -124,17 +124,20 @@ export default function HomeView({
           </button>
         </div>
 
-        <div className="top-products-grid">
-          {topProducts.map((product) => (
-            <ProductCard
-              key={product.id}
-              product={product}
-              cartQuantity={cartMap[product.id] || 0}
-              onAddToCart={onAddToCart}
-              onIncreaseQuantity={onIncreaseQuantity}
-              onDecreaseQuantity={onDecreaseQuantity}
-            />
-          ))}
+        <div className="top-products-carousel-wrapper">
+          <div className="top-products-carousel">
+            {topProducts.map((product) => (
+              <div key={product.id} className="carousel-card-item">
+                <ProductCard
+                  product={product}
+                  cartQuantity={cartMap[product.id] || 0}
+                  onAddToCart={onAddToCart}
+                  onIncreaseQuantity={onIncreaseQuantity}
+                  onDecreaseQuantity={onDecreaseQuantity}
+                />
+              </div>
+            ))}
+          </div>
         </div>
       </div>
 
