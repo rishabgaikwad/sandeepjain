@@ -158,15 +158,17 @@ export default function CartDrawer({
           </button>
         </div>
 
-        {/* Content */}
-        <div className="cart-drawer-body">
-          {orderStatus ? (
+        {/* Content & Form */}
+        {orderStatus ? (
+          <div className="cart-drawer-body">
             <OrderSummary
               orderStatus={orderStatus}
               onResetOrder={handleResetOrder}
               onReopenWhatsApp={handleReopenWhatsApp}
             />
-          ) : cart.length === 0 ? (
+          </div>
+        ) : cart.length === 0 ? (
+          <div className="cart-drawer-body">
             <div className="empty-cart-state">
               <ShoppingBag size={64} className="empty-cart-icon" />
               <h3>Your cart is empty</h3>
@@ -181,8 +183,10 @@ export default function CartDrawer({
                 Browse Products
               </button>
             </div>
-          ) : (
-            <>
+          </div>
+        ) : (
+          <form className="cart-drawer-form" onSubmit={handlePlaceOrder}>
+            <div className="cart-drawer-body">
               {/* Product List */}
               <div className="cart-items-list">
                 {cart.map((item) => (
@@ -205,39 +209,34 @@ export default function CartDrawer({
               </div>
 
               {/* Customer Information Form */}
-              <form id="order-form" onSubmit={handlePlaceOrder}>
-                <CustomerForm
-                  customerData={customerData}
-                  onChange={handleInputChange}
-                  errors={errors}
-                />
-              </form>
-            </>
-          )}
-        </div>
+              <CustomerForm
+                customerData={customerData}
+                onChange={handleInputChange}
+                errors={errors}
+              />
+            </div>
 
-        {/* Fixed Footer for Checkout Button */}
-        {!orderStatus && cart.length > 0 && (
-          <div className="cart-drawer-footer">
-            <button
-              type="submit"
-              form="order-form"
-              className="place-order-btn"
-              disabled={isSubmitting}
-            >
-              {isSubmitting ? (
-                <>
-                  <Loader2 size={18} className="spinner" />
-                  <span>PLACING ORDER...</span>
-                </>
-              ) : (
-                <>
-                  <span>PLACE ORDER</span>
-                  <ArrowRight size={18} />
-                </>
-              )}
-            </button>
-          </div>
+            {/* Fixed Footer for Checkout Button */}
+            <div className="cart-drawer-footer">
+              <button
+                type="submit"
+                className="place-order-btn"
+                disabled={isSubmitting}
+              >
+                {isSubmitting ? (
+                  <>
+                    <Loader2 size={18} className="spinner" />
+                    <span>PLACING ORDER...</span>
+                  </>
+                ) : (
+                  <>
+                    <span>PLACE ORDER</span>
+                    <ArrowRight size={18} />
+                  </>
+                )}
+              </button>
+            </div>
+          </form>
         )}
       </div>
     </div>

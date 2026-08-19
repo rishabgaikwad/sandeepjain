@@ -190,11 +190,13 @@ export default function App() {
       />
 
       {/* 5. Floating Bottom Cart Widget (Desktop & Mobile) */}
-      <FloatingCartWidget
-        cartCount={cartItemCount}
-        cartTotal={cartTotal}
-        onOpenCart={() => setIsCartOpen(true)}
-      />
+      {!isCartOpen && (
+        <FloatingCartWidget
+          cartCount={cartItemCount}
+          cartTotal={cartTotal}
+          onOpenCart={() => setIsCartOpen(true)}
+        />
+      )}
     </div>
   );
 }
