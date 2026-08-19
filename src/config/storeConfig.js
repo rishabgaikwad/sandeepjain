@@ -4,10 +4,10 @@ const storeConfig = {
 
   // Admin WhatsApp number in international format WITHOUT '+' or spaces or dashes
   // Example: "919876543210" (NOT "+91 98765 43210")
-  whatsappNumber: "919876543210",
+  whatsappNumber: "919966410033",
 
   // Admin email address where email notifications will be sent
-  orderEmail: "admin@auroraboutique.com",
+  orderEmail: "rishabgaikwad2969@gmail.com",
 
   // Currency symbol used across the website
   currency: "₹",

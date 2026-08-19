@@ -13,14 +13,15 @@ export const openWhatsAppOrder = (order) => {
   const whatsappUrl = `https://wa.me/${rawNumber}?text=${encodedText}`;
 
   try {
-    const newWindow = window.open(whatsappUrl, '_blank', 'noopener,noreferrer');
-    if (!newWindow || newWindow.closed || typeof newWindow.closed === 'undefined') {
-      // Fallback for pop-up blockers: direct location change or link trigger
+    const newWindow = window.open(whatsappUrl, '_blank');
+    if (!newWindow) {
+      // Fallback for pop-up blockers if window.open returns null
       window.location.href = whatsappUrl;
     }
     return true;
   } catch (error) {
     console.error('Failed to open WhatsApp URL:', error);
+    window.location.href = whatsappUrl;
     return false;
   }
 };
