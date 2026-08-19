@@ -1,6 +1,6 @@
 // =====================================================
 // GLEN LA GALLERY - PRODUCT CATALOGUE DATA
-// Automatically generated from catalogue-data/glen-products1.xlsx
+// Total Products: 618 (566 existing + 52 imported from glen-products5.xlsx)
 // =====================================================
 
 const products = [
@@ -2751,6 +2751,3436 @@ const products = [
     "subCategory": null,
     "price": 16495,
     "nlc": 8095,
+    "image": null,
+    "description": ""
+  },
+  {
+    "id": "glen-prod-276",
+    "name": "LPG Stove 1020 SS AL",
+    "category": "Cook Tops",
+    "subCategory": "Cook Tops Stainless Steel",
+    "price": 4095.0,
+    "nlc": null,
+    "image": null,
+    "description": ""
+  },
+  {
+    "id": "glen-prod-277",
+    "name": "LPG Stove 1020 SS BB",
+    "category": "Cook Tops",
+    "subCategory": "Cook Tops Stainless Steel",
+    "price": 4595.0,
+    "nlc": null,
+    "image": null,
+    "description": ""
+  },
+  {
+    "id": "glen-prod-278",
+    "name": "PNG Stove 1020 SS BB",
+    "category": "Cook Tops",
+    "subCategory": "Cook Tops Stainless Steel",
+    "price": 4595.0,
+    "nlc": null,
+    "image": null,
+    "description": ""
+  },
+  {
+    "id": "glen-prod-279",
+    "name": "LPG Stove 1021 SS",
+    "category": "Cook Tops",
+    "subCategory": "Cook Tops Stainless Steel",
+    "price": 5995.0,
+    "nlc": null,
+    "image": null,
+    "description": ""
+  },
+  {
+    "id": "glen-prod-280",
+    "name": "LPG Stove 1025 SS",
+    "category": "Cook Tops",
+    "subCategory": "Cook Tops Stainless Steel",
+    "price": 6595.0,
+    "nlc": null,
+    "image": null,
+    "description": ""
+  },
+  {
+    "id": "glen-prod-281",
+    "name": "LPG Stove 1026 SS",
+    "category": "Cook Tops",
+    "subCategory": "Cook Tops Stainless Steel",
+    "price": 6895.0,
+    "nlc": null,
+    "image": null,
+    "description": ""
+  },
+  {
+    "id": "glen-prod-282",
+    "name": "LPG Stove 1036 SS HF Brass Burner",
+    "category": "Cook Tops",
+    "subCategory": "Cook Tops Stainless Steel",
+    "price": 8295.0,
+    "nlc": null,
+    "image": null,
+    "description": ""
+  },
+  {
+    "id": "glen-prod-283",
+    "name": "LPG Stove 1037SSHF Brass Burner",
+    "category": "Cook Tops",
+    "subCategory": "Cook Tops Stainless Steel",
+    "price": 9995.0,
+    "nlc": null,
+    "image": null,
+    "description": ""
+  },
+  {
+    "id": "glen-prod-284",
+    "name": "LPG Stove 1044 SS BB",
+    "category": "Cook Tops",
+    "subCategory": "Cook Tops Stainless Steel",
+    "price": 11295.0,
+    "nlc": null,
+    "image": null,
+    "description": ""
+  },
+  {
+    "id": "glen-prod-285",
+    "name": "LPG Stove 1044 SS HF BB AI",
+    "category": "Cook Tops",
+    "subCategory": "Cook Tops Stainless Steel",
+    "price": 12995.0,
+    "nlc": null,
+    "image": null,
+    "description": ""
+  },
+  {
+    "id": "glen-prod-286",
+    "name": "LPG Stove 1044 XL SS HF BB",
+    "category": "Cook Tops",
+    "subCategory": "Cook Tops Stainless Steel",
+    "price": 12295.0,
+    "nlc": null,
+    "image": null,
+    "description": ""
+  },
+  {
+    "id": "glen-prod-287",
+    "name": "LPG Stove 1020 GT BB Black",
+    "category": "Cook Tops",
+    "subCategory": "Cook Tops - Glass Top",
+    "price": 6695.0,
+    "nlc": null,
+    "image": null,
+    "description": ""
+  },
+  {
+    "id": "glen-prod-288",
+    "name": "LPG Stove 1020 GT XL BB Black",
+    "category": "Cook Tops",
+    "subCategory": "Cook Tops - Glass Top",
+    "price": 6695.0,
+    "nlc": null,
+    "image": null,
+    "description": ""
+  },
+  {
+    "id": "glen-prod-289",
+    "name": "LPG Stove 1033 GT Brass Burner Black",
+    "category": "Cook Tops",
+    "subCategory": "Cook Tops - Glass Top",
+    "price": 9695.0,
+    "nlc": null,
+    "image": null,
+    "description": ""
+  },
+  {
+    "id": "glen-prod-290",
+    "name": "LPG Stove 1033 GT Brass Burner Black AI",
+    "category": "Cook Tops",
+    "subCategory": "Cook Tops - Glass Top",
+    "price": 11395.0,
+    "nlc": null,
+    "image": null,
+    "description": ""
+  },
+  {
+    "id": "glen-prod-291",
+    "name": "LPG Stove 1033 GT XL Brass Burner Black",
+    "category": "Cook Tops",
+    "subCategory": "Cook Tops - Glass Top",
+    "price": 10495.0,
+    "nlc": null,
+    "image": null,
+    "description": ""
+  },
+  {
+    "id": "glen-prod-292",
+    "name": "PNG Stove 1033 GT XL Brass Burner Black",
+    "category": "Cook Tops",
+    "subCategory": "Cook Tops - Glass Top",
+    "price": 10495.0,
+    "nlc": null,
+    "image": null,
+    "description": ""
+  },
+  {
+    "id": "glen-prod-293",
+    "name": "LPG Stove 1033 GT XL B Burner Black AI",
+    "category": "Cook Tops",
+    "subCategory": "Cook Tops - Glass Top",
+    "price": 12395.0,
+    "nlc": null,
+    "image": null,
+    "description": ""
+  },
+  {
+    "id": "glen-prod-294",
+    "name": "LPG Stove 1034 GT Brass Burner Black",
+    "category": "Cook Tops",
+    "subCategory": "Cook Tops - Glass Top",
+    "price": 8695.0,
+    "nlc": null,
+    "image": null,
+    "description": ""
+  },
+  {
+    "id": "glen-prod-295",
+    "name": "LPG Stove 1036 GT HF BB AI",
+    "category": "Cook Tops",
+    "subCategory": "Cook Tops - Glass Top",
+    "price": 14395.0,
+    "nlc": null,
+    "image": null,
+    "description": ""
+  },
+  {
+    "id": "glen-prod-296",
+    "name": "LPG Stove 1041 GT Brass Burner Black",
+    "category": "Cook Tops",
+    "subCategory": "Cook Tops - Glass Top",
+    "price": 11895.0,
+    "nlc": null,
+    "image": null,
+    "description": ""
+  },
+  {
+    "id": "glen-prod-297",
+    "name": "LPG Stove 1041 GT AI Brass Burner Black",
+    "category": "Cook Tops",
+    "subCategory": "Cook Tops - Glass Top",
+    "price": 13795.0,
+    "nlc": null,
+    "image": null,
+    "description": ""
+  },
+  {
+    "id": "glen-prod-298",
+    "name": "LPG Stove 1043 GT Brass Burner Black",
+    "category": "Cook Tops",
+    "subCategory": "Cook Tops - Glass Top",
+    "price": 10895.0,
+    "nlc": null,
+    "image": null,
+    "description": ""
+  },
+  {
+    "id": "glen-prod-299",
+    "name": "PNG Stove 1043 GT Brass Burner Black",
+    "category": "Cook Tops",
+    "subCategory": "Cook Tops - Glass Top",
+    "price": 10895.0,
+    "nlc": null,
+    "image": null,
+    "description": ""
+  },
+  {
+    "id": "glen-prod-300",
+    "name": "LPG Stove 1043 GT AI Brass Burner Black",
+    "category": "Cook Tops",
+    "subCategory": "Cook Tops - Glass Top",
+    "price": 12995.0,
+    "nlc": null,
+    "image": null,
+    "description": ""
+  },
+  {
+    "id": "glen-prod-301",
+    "name": "PNG Stove 1043 GT AI Brass Burner Black",
+    "category": "Cook Tops",
+    "subCategory": "Cook Tops - Glass Top",
+    "price": 12995.0,
+    "nlc": null,
+    "image": null,
+    "description": ""
+  },
+  {
+    "id": "glen-prod-302",
+    "name": "LPG Stove 1046 GT HF BB AI",
+    "category": "Cook Tops",
+    "subCategory": "Cook Tops - Glass Top",
+    "price": 15995.0,
+    "nlc": null,
+    "image": null,
+    "description": ""
+  },
+  {
+    "id": "glen-prod-303",
+    "name": "LPG Stove 1048 GT Forged BB Mirror",
+    "category": "Cook Tops",
+    "subCategory": "Cook Tops - Glass Top",
+    "price": 16995.0,
+    "nlc": null,
+    "image": null,
+    "description": ""
+  },
+  {
+    "id": "glen-prod-304",
+    "name": "LPG Stove 1048 GT FB Mirror Black",
+    "category": "Cook Tops",
+    "subCategory": "Cook Tops - Glass Top",
+    "price": 16995.0,
+    "nlc": null,
+    "image": null,
+    "description": ""
+  },
+  {
+    "id": "glen-prod-305",
+    "name": "LPG Stove 1030 GT Brass Burner Black",
+    "category": "Cook Tops",
+    "subCategory": "Cook Tops - Glass Top Junior",
+    "price": 7995.0,
+    "nlc": null,
+    "image": null,
+    "description": ""
+  },
+  {
+    "id": "glen-prod-306",
+    "name": "PNG Stove 1030 GT Brass Burner Black",
+    "category": "Cook Tops",
+    "subCategory": "Cook Tops - Glass Top Junior",
+    "price": 7995.0,
+    "nlc": null,
+    "image": null,
+    "description": ""
+  },
+  {
+    "id": "glen-prod-307",
+    "name": "LPG Stove 1030 GT Brass Burner Black AI",
+    "category": "Cook Tops",
+    "subCategory": "Cook Tops - Glass Top Junior",
+    "price": 9895.0,
+    "nlc": null,
+    "image": null,
+    "description": ""
+  },
+  {
+    "id": "glen-prod-308",
+    "name": "LPG Stove 1040 GT XL Junior BB Black",
+    "category": "Cook Tops",
+    "subCategory": "Cook Tops - Glass Top Junior",
+    "price": 9895.0,
+    "nlc": null,
+    "image": null,
+    "description": ""
+  },
+  {
+    "id": "glen-prod-309",
+    "name": "LPG Stove 1040 GT XL HF BB Black",
+    "category": "Cook Tops",
+    "subCategory": "Cook Tops - Glass Top Junior",
+    "price": 10195.0,
+    "nlc": null,
+    "image": null,
+    "description": ""
+  },
+  {
+    "id": "glen-prod-310",
+    "name": "LPG Stove 1037 Ultra Slim Top Knob 75",
+    "category": "Cook Tops",
+    "subCategory": "Cook Tops - Top Knob Glass",
+    "price": 18995.0,
+    "nlc": null,
+    "image": null,
+    "description": ""
+  },
+  {
+    "id": "glen-prod-311",
+    "name": "LPG Stove 1037 Ultra Slim Top Knob 75 AI",
+    "category": "Cook Tops",
+    "subCategory": "Cook Tops - Top Knob Glass",
+    "price": 20995.0,
+    "nlc": null,
+    "image": null,
+    "description": ""
+  },
+  {
+    "id": "glen-prod-312",
+    "name": "LPG Stove 1045 Ultra Slim Top Knob 75",
+    "category": "Cook Tops",
+    "subCategory": "Cook Tops - Top Knob Glass",
+    "price": 20995.0,
+    "nlc": null,
+    "image": null,
+    "description": ""
+  },
+  {
+    "id": "glen-prod-313",
+    "name": "LPG Stove 1045 Ultra Slim Top Knob 75 AI",
+    "category": "Cook Tops",
+    "subCategory": "Cook Tops - Top Knob Glass",
+    "price": 22995.0,
+    "nlc": null,
+    "image": null,
+    "description": ""
+  },
+  {
+    "id": "glen-prod-314",
+    "name": "Built In Hob 1061 DB TR SS",
+    "category": "HOB",
+    "subCategory": "Hobtops & Built-in-Hobs",
+    "price": 31995.0,
+    "nlc": null,
+    "image": null,
+    "description": ""
+  },
+  {
+    "id": "glen-prod-315",
+    "name": "Built In Hob 1065 TR GLASS",
+    "category": "HOB",
+    "subCategory": "Hobtops & Built-in-Hobs",
+    "price": 24995.0,
+    "nlc": null,
+    "image": null,
+    "description": ""
+  },
+  {
+    "id": "glen-prod-316",
+    "name": "Built in Hob 1073 TR Glass",
+    "category": "HOB",
+    "subCategory": "Hobtops & Built-in-Hobs",
+    "price": 22095.0,
+    "nlc": null,
+    "image": null,
+    "description": ""
+  },
+  {
+    "id": "glen-prod-317",
+    "name": "Built In Hob 1063 SQ Double Brass",
+    "category": "HOB",
+    "subCategory": "Hobtops & Built-in-Hobs",
+    "price": 27395.0,
+    "nlc": null,
+    "image": null,
+    "description": ""
+  },
+  {
+    "id": "glen-prod-318",
+    "name": "Built In HobTop 1064 RO HT Double Brass",
+    "category": "HOB",
+    "subCategory": "Hobtops & Built-in-Hobs",
+    "price": 31595.0,
+    "nlc": null,
+    "image": null,
+    "description": ""
+  },
+  {
+    "id": "glen-prod-319",
+    "name": "Built in HobTop 1065XROHT DoubleBrass 65",
+    "category": "HOB",
+    "subCategory": "Hobtops & Built-in-Hobs",
+    "price": 31595.0,
+    "nlc": null,
+    "image": null,
+    "description": ""
+  },
+  {
+    "id": "glen-prod-320",
+    "name": "Built in HobTop 1065XSQHTTR DoubleBrass 65",
+    "category": "HOB",
+    "subCategory": "Hobtops & Built-in-Hobs",
+    "price": 34995.0,
+    "nlc": null,
+    "image": null,
+    "description": ""
+  },
+  {
+    "id": "glen-prod-321",
+    "name": "Built In Hob 1073 SQ HT IN 70",
+    "category": "HOB",
+    "subCategory": "Hobtops & Built-in-Hobs",
+    "price": 25995.0,
+    "nlc": null,
+    "image": null,
+    "description": ""
+  },
+  {
+    "id": "glen-prod-322",
+    "name": "Built in Hob 1073 SQ HT Double Brass 70",
+    "category": "HOB",
+    "subCategory": "Hobtops & Built-in-Hobs",
+    "price": 27995.0,
+    "nlc": null,
+    "image": null,
+    "description": ""
+  },
+  {
+    "id": "glen-prod-323",
+    "name": "Built In Hob 1073 XLSQ HT DB TR BL77",
+    "category": "HOB",
+    "subCategory": "Hobtops & Built-in-Hobs",
+    "price": 35995.0,
+    "nlc": null,
+    "image": null,
+    "description": ""
+  },
+  {
+    "id": "glen-prod-324",
+    "name": "Built In Hob 1074 SQ HT IN 70",
+    "category": "HOB",
+    "subCategory": "Hobtops & Built-in-Hobs",
+    "price": 30995.0,
+    "nlc": null,
+    "image": null,
+    "description": ""
+  },
+  {
+    "id": "glen-prod-325",
+    "name": "Built in Hob 1074 SQ HT DB Mini TR",
+    "category": "HOB",
+    "subCategory": "Hobtops & Built-in-Hobs",
+    "price": 34995.0,
+    "nlc": null,
+    "image": null,
+    "description": ""
+  },
+  {
+    "id": "glen-prod-326",
+    "name": "Built In Hob 1074 X SQ HT DB TR 70cm",
+    "category": "HOB",
+    "subCategory": "Hobtops & Built-in-Hobs",
+    "price": 37995.0,
+    "nlc": null,
+    "image": null,
+    "description": ""
+  },
+  {
+    "id": "glen-prod-327",
+    "name": "Built in Hob 1093 XL SQ HT DB TR",
+    "category": "HOB",
+    "subCategory": "Hobtops & Built-in-Hobs",
+    "price": 35995.0,
+    "nlc": null,
+    "image": null,
+    "description": ""
+  },
+  {
+    "id": "glen-prod-328",
+    "name": "Built in Hob 1094 XL SQ HT DB TR",
+    "category": "HOB",
+    "subCategory": "Hobtops & Built-in-Hobs",
+    "price": 41995.0,
+    "nlc": null,
+    "image": null,
+    "description": ""
+  },
+  {
+    "id": "glen-prod-329",
+    "name": "LPG Stove 1020 GT Jumbo BB Black",
+    "category": "Cook Tops",
+    "subCategory": "Cook Tops - ONLINE for Trade",
+    "price": 6995.0,
+    "nlc": null,
+    "image": null,
+    "description": ""
+  },
+  {
+    "id": "glen-prod-330",
+    "name": "LPG Stove 1022 GT XL BB Black",
+    "category": "Cook Tops",
+    "subCategory": "Cook Tops - ONLINE for Trade",
+    "price": 7295.0,
+    "nlc": null,
+    "image": null,
+    "description": ""
+  },
+  {
+    "id": "glen-prod-331",
+    "name": "LPG Stove 1021 GT HF BB Black",
+    "category": "Cook Tops",
+    "subCategory": "Cook Tops - ONLINE for Trade",
+    "price": 7995.0,
+    "nlc": null,
+    "image": null,
+    "description": ""
+  },
+  {
+    "id": "glen-prod-332",
+    "name": "PNG Stove 1021 GT HF BB Black",
+    "category": "Cook Tops",
+    "subCategory": "Cook Tops - ONLINE for Trade",
+    "price": 7995.0,
+    "nlc": null,
+    "image": null,
+    "description": ""
+  },
+  {
+    "id": "glen-prod-333",
+    "name": "LPG Stove 1021 GT HF BB Black AI",
+    "category": "Cook Tops",
+    "subCategory": "Cook Tops - ONLINE for Trade",
+    "price": 8995.0,
+    "nlc": null,
+    "image": null,
+    "description": ""
+  },
+  {
+    "id": "glen-prod-334",
+    "name": "LPG Stove 1030 GT HF Brass Burner Black",
+    "category": "Cook Tops",
+    "subCategory": "Cook Tops - ONLINE for Trade",
+    "price": 9295.0,
+    "nlc": null,
+    "image": null,
+    "description": ""
+  },
+  {
+    "id": "glen-prod-335",
+    "name": "PNG Stove 1030 GT HF Brass Burner Black",
+    "category": "Cook Tops",
+    "subCategory": "Cook Tops - ONLINE for Trade",
+    "price": 9295.0,
+    "nlc": null,
+    "image": null,
+    "description": ""
+  },
+  {
+    "id": "glen-prod-336",
+    "name": "LPG Stove 1037 GT Brass Burner Black",
+    "category": "Cook Tops",
+    "subCategory": "Cook Tops - ONLINE for Trade",
+    "price": 9295.0,
+    "nlc": null,
+    "image": null,
+    "description": ""
+  },
+  {
+    "id": "glen-prod-337",
+    "name": "LPG Stove 1032 GT HF BB Drip Tray Black",
+    "category": "Cook Tops",
+    "subCategory": "Cook Tops - ONLINE for Trade",
+    "price": 11995.0,
+    "nlc": null,
+    "image": null,
+    "description": ""
+  },
+  {
+    "id": "glen-prod-338",
+    "name": "LPG Stove 1032 GT HF BB Drip Tray Black AI",
+    "category": "Cook Tops",
+    "subCategory": "Cook Tops - ONLINE for Trade",
+    "price": 13595.0,
+    "nlc": null,
+    "image": null,
+    "description": ""
+  },
+  {
+    "id": "glen-prod-339",
+    "name": "LPG Stove 1038 GT BBM Black",
+    "category": "Cook Tops",
+    "subCategory": "Cook Tops - ONLINE for Trade",
+    "price": 12595.0,
+    "nlc": null,
+    "image": null,
+    "description": ""
+  },
+  {
+    "id": "glen-prod-340",
+    "name": "PNG Stove 1038 GT BBM Black",
+    "category": "Cook Tops",
+    "subCategory": "Cook Tops - ONLINE for Trade",
+    "price": 12595.0,
+    "nlc": null,
+    "image": null,
+    "description": ""
+  },
+  {
+    "id": "glen-prod-341",
+    "name": "LPG Stove 1038 GT BBM Black AI",
+    "category": "Cook Tops",
+    "subCategory": "Cook Tops - ONLINE for Trade",
+    "price": 14195.0,
+    "nlc": null,
+    "image": null,
+    "description": ""
+  },
+  {
+    "id": "glen-prod-342",
+    "name": "LPG Stove 1041 GT Forged BB Black",
+    "category": "Cook Tops",
+    "subCategory": "Cook Tops - ONLINE for Trade",
+    "price": 12895.0,
+    "nlc": null,
+    "image": null,
+    "description": ""
+  },
+  {
+    "id": "glen-prod-343",
+    "name": "LPG Stove 1041 GT AI Forged BB Black",
+    "category": "Cook Tops",
+    "subCategory": "Cook Tops - ONLINE for Trade",
+    "price": 14795.0,
+    "nlc": null,
+    "image": null,
+    "description": ""
+  },
+  {
+    "id": "glen-prod-344",
+    "name": "LPG Stove 1043 GT HF BB Drip Tray Black",
+    "category": "Cook Tops",
+    "subCategory": "Cook Tops - ONLINE for Trade",
+    "price": 13795.0,
+    "nlc": null,
+    "image": null,
+    "description": ""
+  },
+  {
+    "id": "glen-prod-345",
+    "name": "LPG Stove 1043 GT HF BB Drip Tray Black AI",
+    "category": "Cook Tops",
+    "subCategory": "Cook Tops - ONLINE for Trade",
+    "price": 15195.0,
+    "nlc": null,
+    "image": null,
+    "description": ""
+  },
+  {
+    "id": "glen-prod-346",
+    "name": "LPG Stove 1048 GT HF BB Black",
+    "category": "Cook Tops",
+    "subCategory": "Cook Tops - ONLINE for Trade",
+    "price": 15495.0,
+    "nlc": null,
+    "image": null,
+    "description": ""
+  },
+  {
+    "id": "glen-prod-347",
+    "name": "LPG Stove 1048 GT HF BB Black AI",
+    "category": "Cook Tops",
+    "subCategory": "Cook Tops - ONLINE for Trade",
+    "price": 17495.0,
+    "nlc": null,
+    "image": null,
+    "description": ""
+  },
+  {
+    "id": "glen-prod-348",
+    "name": "LPG Stove 1036 Ultra Slim Top Knob 77",
+    "category": "Cook Tops",
+    "subCategory": "Cook Tops - Top Knob Glass",
+    "price": 21995.0,
+    "nlc": null,
+    "image": null,
+    "description": ""
+  },
+  {
+    "id": "glen-prod-349",
+    "name": "LPG Stove 1047 Ultra Slim Top Knob 77",
+    "category": "Cook Tops",
+    "subCategory": "Cook Tops - Top Knob Glass",
+    "price": 24995.0,
+    "nlc": null,
+    "image": null,
+    "description": ""
+  },
+  {
+    "id": "glen-prod-350",
+    "name": "Cooker Hood 6000 Junior BLK BF 1000 60cm",
+    "category": "Cooker Hoods",
+    "subCategory": "Chimney Hoods",
+    "price": 13995.0,
+    "nlc": null,
+    "image": null,
+    "description": ""
+  },
+  {
+    "id": "glen-prod-351",
+    "name": "Cooker Hood 6000 Junior BF 1000 60cm",
+    "category": "Cooker Hoods",
+    "subCategory": "Chimney Hoods",
+    "price": 14595.0,
+    "nlc": null,
+    "image": null,
+    "description": ""
+  },
+  {
+    "id": "glen-prod-352",
+    "name": "Cooker Hood 6049 IN BLK BF 1100 60cm",
+    "category": "Cooker Hoods",
+    "subCategory": "Chimney Hoods",
+    "price": 11795.0,
+    "nlc": null,
+    "image": null,
+    "description": ""
+  },
+  {
+    "id": "glen-prod-353",
+    "name": "Cooker Hood 6050 IN BLK BF 1100 60cm",
+    "category": "Cooker Hoods",
+    "subCategory": "Chimney Hoods",
+    "price": 12595.0,
+    "nlc": null,
+    "image": null,
+    "description": ""
+  },
+  {
+    "id": "glen-prod-354",
+    "name": "Cooker Hood 6050 Junior DX BF 1000 60cm",
+    "category": "Cooker Hoods",
+    "subCategory": "Chimney Hoods",
+    "price": 15995.0,
+    "nlc": null,
+    "image": null,
+    "description": ""
+  },
+  {
+    "id": "glen-prod-355",
+    "name": "Cooker Hood 6050 Ju BLK DX BF 1000 60cm",
+    "category": "Cooker Hoods",
+    "subCategory": "Chimney Hoods",
+    "price": 14995.0,
+    "nlc": null,
+    "image": null,
+    "description": ""
+  },
+  {
+    "id": "glen-prod-356",
+    "name": "Cooker Hood 6052 IN BLK BF 1100 60cm",
+    "category": "Cooker Hoods",
+    "subCategory": "Chimney Hoods",
+    "price": 15995.0,
+    "nlc": null,
+    "image": null,
+    "description": ""
+  },
+  {
+    "id": "glen-prod-357",
+    "name": "Cooker Hood 6052 IN DX BLK BF 1600 60cm",
+    "category": "Cooker Hoods",
+    "subCategory": "Chimney Hoods",
+    "price": 16995.0,
+    "nlc": null,
+    "image": null,
+    "description": ""
+  },
+  {
+    "id": "glen-prod-358",
+    "name": "Cooker Hood 6052 IN MSDX BLBF 1600 60cm",
+    "category": "Cooker Hoods",
+    "subCategory": "Chimney Hoods",
+    "price": 21995.0,
+    "nlc": null,
+    "image": null,
+    "description": ""
+  },
+  {
+    "id": "glen-prod-359",
+    "name": "Cooker Hood 6056 SXTS 60CM 1000m3 BFLTW",
+    "category": "Cooker Hoods",
+    "subCategory": "Chimney Hoods",
+    "price": 25995.0,
+    "nlc": null,
+    "image": null,
+    "description": ""
+  },
+  {
+    "id": "glen-prod-360",
+    "name": "Cooker Hood 6062 Blk 60Cm 1000M3 BF LTW",
+    "category": "Cooker Hoods",
+    "subCategory": "Chimney Hoods",
+    "price": 20995.0,
+    "nlc": null,
+    "image": null,
+    "description": ""
+  },
+  {
+    "id": "glen-prod-361",
+    "name": "Cooker Hood 6062 BLK 90cm 1000m3 BF LTW",
+    "category": "Cooker Hoods",
+    "subCategory": "Chimney Hoods",
+    "price": 23995.0,
+    "nlc": null,
+    "image": null,
+    "description": ""
+  },
+  {
+    "id": "glen-prod-362",
+    "name": "Cooker Hood 6062 SLIM BL AC 90cm 1200",
+    "category": "Cooker Hoods",
+    "subCategory": "Chimney Hoods",
+    "price": 25995.0,
+    "nlc": null,
+    "image": null,
+    "description": ""
+  },
+  {
+    "id": "glen-prod-363",
+    "name": "Cooker Hood 6070 JU BL 60cm 1000m3 BFLTW",
+    "category": "Cooker Hoods",
+    "subCategory": "Chimney Hoods",
+    "price": 18995.0,
+    "nlc": null,
+    "image": null,
+    "description": ""
+  },
+  {
+    "id": "glen-prod-364",
+    "name": "Cooker Hood 6071 EX 60cm 1000m3 SS LTW",
+    "category": "Cooker Hoods",
+    "subCategory": "Chimney Hoods",
+    "price": 17995.0,
+    "nlc": null,
+    "image": null,
+    "description": ""
+  },
+  {
+    "id": "glen-prod-365",
+    "name": "Cooker Hood 6071 BLK EX 60cm 1000m3 LTW",
+    "category": "Cooker Hoods",
+    "subCategory": "Chimney Hoods",
+    "price": 17995.0,
+    "nlc": null,
+    "image": null,
+    "description": ""
+  },
+  {
+    "id": "glen-prod-366",
+    "name": "Cooker Hood 6071 IN 60cm 1100m3 BLK",
+    "category": "Cooker Hoods",
+    "subCategory": "Chimney Hoods",
+    "price": 21995.0,
+    "nlc": null,
+    "image": null,
+    "description": ""
+  },
+  {
+    "id": "glen-prod-367",
+    "name": "Cooker Hood 6071 GF 90CM 1250M3 BF LTW",
+    "category": "Cooker Hoods",
+    "subCategory": "Chimney Hoods",
+    "price": 31995.0,
+    "nlc": null,
+    "image": null,
+    "description": ""
+  },
+  {
+    "id": "glen-prod-368",
+    "name": "Cooker Hood 6077 Black 1000BF 60cm  LTW",
+    "category": "Cooker Hoods",
+    "subCategory": "Chimney Hoods",
+    "price": 22995.0,
+    "nlc": null,
+    "image": null,
+    "description": ""
+  },
+  {
+    "id": "glen-prod-369",
+    "name": "Cooker Hood 6079 IN 1100 60cm  LTW",
+    "category": "Cooker Hoods",
+    "subCategory": "Chimney Hoods",
+    "price": 21995.0,
+    "nlc": null,
+    "image": null,
+    "description": ""
+  },
+  {
+    "id": "glen-prod-370",
+    "name": "Cooker Hood 6079 IN 1100 90cm  LTW",
+    "category": "Cooker Hoods",
+    "subCategory": "Chimney Hoods",
+    "price": 30995.0,
+    "nlc": null,
+    "image": null,
+    "description": ""
+  },
+  {
+    "id": "glen-prod-371",
+    "name": "Cooker Hood 6052 DI BL A Clean 60cm 1200",
+    "category": "Cooker Hoods",
+    "subCategory": "Chimney Hoods",
+    "price": 22200.0,
+    "nlc": null,
+    "image": null,
+    "description": ""
+  },
+  {
+    "id": "glen-prod-372",
+    "name": "Cooker Hood 6052 SX BL A Clean 60cm 1200",
+    "category": "Cooker Hoods",
+    "subCategory": "Chimney Hoods",
+    "price": 21300.0,
+    "nlc": null,
+    "image": null,
+    "description": ""
+  },
+  {
+    "id": "glen-prod-373",
+    "name": "Cooker Hood 6058 BL Auto Clean 60cm 1200",
+    "category": "Cooker Hoods",
+    "subCategory": "Chimney Hoods",
+    "price": 22995.0,
+    "nlc": null,
+    "image": null,
+    "description": ""
+  },
+  {
+    "id": "glen-prod-374",
+    "name": "Cooker Hood 6058 BL Auto Clean 76cm 1200",
+    "category": "Cooker Hoods",
+    "subCategory": "Chimney Hoods",
+    "price": 24495.0,
+    "nlc": null,
+    "image": null,
+    "description": ""
+  },
+  {
+    "id": "glen-prod-375",
+    "name": "Cooker Hood 6058 BL Auto Clean 90cm 1200",
+    "category": "Cooker Hoods",
+    "subCategory": "Chimney Hoods",
+    "price": 25995.0,
+    "nlc": null,
+    "image": null,
+    "description": ""
+  },
+  {
+    "id": "glen-prod-376",
+    "name": "Cooker Hood 6063 BL Auto Clean 60cm 1200",
+    "category": "Cooker Hoods",
+    "subCategory": "Chimney Hoods",
+    "price": 28995.0,
+    "nlc": null,
+    "image": null,
+    "description": ""
+  },
+  {
+    "id": "glen-prod-377",
+    "name": "Cooker Hood 6063 BL Auto Clean 90cm 1200",
+    "category": "Cooker Hoods",
+    "subCategory": "Chimney Hoods",
+    "price": 32995.0,
+    "nlc": null,
+    "image": null,
+    "description": ""
+  },
+  {
+    "id": "glen-prod-378",
+    "name": "Cooker Hood 6064 BL MS AC 60cm 1200",
+    "category": "Cooker Hoods",
+    "subCategory": "Chimney Hoods",
+    "price": 26995.0,
+    "nlc": null,
+    "image": null,
+    "description": ""
+  },
+  {
+    "id": "glen-prod-379",
+    "name": "Cooker Hood 6064 BL MS AC 90cm 1200",
+    "category": "Cooker Hoods",
+    "subCategory": "Chimney Hoods",
+    "price": 30995.0,
+    "nlc": null,
+    "image": null,
+    "description": ""
+  },
+  {
+    "id": "glen-prod-380",
+    "name": "Cooker Hood 6072 SX BL MS AC 60cm 1400",
+    "category": "Cooker Hoods",
+    "subCategory": "Chimney Hoods",
+    "price": 32995.0,
+    "nlc": null,
+    "image": null,
+    "description": ""
+  },
+  {
+    "id": "glen-prod-381",
+    "name": "Cooker Hood 6072 SX BL MS AC 75cm 1400",
+    "category": "Cooker Hoods",
+    "subCategory": "Chimney Hoods",
+    "price": 34995.0,
+    "nlc": null,
+    "image": null,
+    "description": ""
+  },
+  {
+    "id": "glen-prod-382",
+    "name": "Cooker Hood 6072 SX BL MS AC 90cm 1400",
+    "category": "Cooker Hoods",
+    "subCategory": "Chimney Hoods",
+    "price": 36995.0,
+    "nlc": null,
+    "image": null,
+    "description": ""
+  },
+  {
+    "id": "glen-prod-383",
+    "name": "Cooker Hood 6054 BL 60cm 1250m3 BF-LTW",
+    "category": "Cooker Hoods",
+    "subCategory": "Online Rates only for Trade",
+    "price": 21995.0,
+    "nlc": null,
+    "image": null,
+    "description": ""
+  },
+  {
+    "id": "glen-prod-384",
+    "name": "Cooker Hood 6054 BL 90cm 1250m3 BF-LTW",
+    "category": "Cooker Hoods",
+    "subCategory": "Online Rates only for Trade",
+    "price": 24995.0,
+    "nlc": null,
+    "image": null,
+    "description": ""
+  },
+  {
+    "id": "glen-prod-385",
+    "name": "Cooker Hood 6071 TS 90cm 1250m3 SS LTW",
+    "category": "Cooker Hoods",
+    "subCategory": "Online Rates only for Trade",
+    "price": 34995.0,
+    "nlc": null,
+    "image": null,
+    "description": ""
+  },
+  {
+    "id": "glen-prod-386",
+    "name": "Cooker Hood 6052 Heat Sensor BLAC60 1400",
+    "category": "Cooker Hoods",
+    "subCategory": "Online Rates only for Trade",
+    "price": 23995.0,
+    "nlc": null,
+    "image": null,
+    "description": ""
+  },
+  {
+    "id": "glen-prod-387",
+    "name": "Cooker Hood 6052 Heat Sensor BLAC76 1400",
+    "category": "Cooker Hoods",
+    "subCategory": "Online Rates only for Trade",
+    "price": 25995.0,
+    "nlc": null,
+    "image": null,
+    "description": ""
+  },
+  {
+    "id": "glen-prod-388",
+    "name": "Cooker Hood 6052 Heat Sensor BLAC90 1400",
+    "category": "Cooker Hoods",
+    "subCategory": "Online Rates only for Trade",
+    "price": 27995.0,
+    "nlc": null,
+    "image": null,
+    "description": ""
+  },
+  {
+    "id": "glen-prod-389",
+    "name": "Cooker Hood 6052 SLIM BL AC 60cm 1200",
+    "category": "Cooker Hoods",
+    "subCategory": "Online Rates only for Trade",
+    "price": 19995.0,
+    "nlc": null,
+    "image": null,
+    "description": ""
+  },
+  {
+    "id": "glen-prod-390",
+    "name": "Cooker Hood 6052 SLIM BL AC 90cm 1200",
+    "category": "Cooker Hoods",
+    "subCategory": "Online Rates only for Trade",
+    "price": 23995.0,
+    "nlc": null,
+    "image": null,
+    "description": ""
+  },
+  {
+    "id": "glen-prod-391",
+    "name": "Cooker Hood 6052 Slim BL BLDCAC60 1400",
+    "category": "Cooker Hoods",
+    "subCategory": "Online Rates only for Trade",
+    "price": 31995.0,
+    "nlc": null,
+    "image": null,
+    "description": ""
+  },
+  {
+    "id": "glen-prod-392",
+    "name": "Cooker Hood 6052 Slim BL BLDCAC76 1400",
+    "category": "Cooker Hoods",
+    "subCategory": "Online Rates only for Trade",
+    "price": 33995.0,
+    "nlc": null,
+    "image": null,
+    "description": ""
+  },
+  {
+    "id": "glen-prod-393",
+    "name": "Cooker Hood 6052 Slim BL BLDCAC90 1400",
+    "category": "Cooker Hoods",
+    "subCategory": "Online Rates only for Trade",
+    "price": 35995.0,
+    "nlc": null,
+    "image": null,
+    "description": ""
+  },
+  {
+    "id": "glen-prod-394",
+    "name": "Cooker Hood 6058 DI BL A Clean 60cm 1200",
+    "category": "Cooker Hoods",
+    "subCategory": "Online Rates only for Trade",
+    "price": 23995.0,
+    "nlc": null,
+    "image": null,
+    "description": ""
+  },
+  {
+    "id": "glen-prod-395",
+    "name": "Cooker Hood 6058 DI BL A Clean 76cm 1200",
+    "category": "Cooker Hoods",
+    "subCategory": "Online Rates only for Trade",
+    "price": 25495.0,
+    "nlc": null,
+    "image": null,
+    "description": ""
+  },
+  {
+    "id": "glen-prod-396",
+    "name": "Cooker Hood 6058 DI BL A Clean 90cm 1200",
+    "category": "Cooker Hoods",
+    "subCategory": "Online Rates only for Trade",
+    "price": 26995.0,
+    "nlc": null,
+    "image": null,
+    "description": ""
+  },
+  {
+    "id": "glen-prod-397",
+    "name": "Cooker Hood 6059 DI BL A Clean 60cm 1500",
+    "category": "Cooker Hoods",
+    "subCategory": "Online Rates only for Trade",
+    "price": 29995.0,
+    "nlc": null,
+    "image": null,
+    "description": ""
+  },
+  {
+    "id": "glen-prod-398",
+    "name": "Cooker Hood 6059 DI BL A Clean 76cm 1500",
+    "category": "Cooker Hoods",
+    "subCategory": "Online Rates only for Trade",
+    "price": 31995.0,
+    "nlc": null,
+    "image": null,
+    "description": ""
+  },
+  {
+    "id": "glen-prod-399",
+    "name": "Cooker Hood 6059 DI BL A Clean 90cm 1500",
+    "category": "Cooker Hoods",
+    "subCategory": "Online Rates only for Trade",
+    "price": 33995.0,
+    "nlc": null,
+    "image": null,
+    "description": ""
+  },
+  {
+    "id": "glen-prod-400",
+    "name": "Cooker Hood 6064 Heat Sensor BLAC60 1400",
+    "category": "Cooker Hoods",
+    "subCategory": "Online Rates only for Trade",
+    "price": 29995.0,
+    "nlc": null,
+    "image": null,
+    "description": ""
+  },
+  {
+    "id": "glen-prod-401",
+    "name": "Cooker Hood 6064 Heat Sensor BLAC75 1400",
+    "category": "Cooker Hoods",
+    "subCategory": "Online Rates only for Trade",
+    "price": 31995.0,
+    "nlc": null,
+    "image": null,
+    "description": ""
+  },
+  {
+    "id": "glen-prod-402",
+    "name": "Cooker Hood 6064 Heat Sensor BLAC90 1400",
+    "category": "Cooker Hoods",
+    "subCategory": "Online Rates only for Trade",
+    "price": 33995.0,
+    "nlc": null,
+    "image": null,
+    "description": ""
+  },
+  {
+    "id": "glen-prod-403",
+    "name": "Cooker Hood 6065  BL MS AC 60cm 1400",
+    "category": "Cooker Hoods",
+    "subCategory": "Online Rates only for Trade",
+    "price": 34995.0,
+    "nlc": null,
+    "image": null,
+    "description": ""
+  },
+  {
+    "id": "glen-prod-404",
+    "name": "Cooker Hood 6065  BL MS AC 75cm 1400",
+    "category": "Cooker Hoods",
+    "subCategory": "Online Rates only for Trade",
+    "price": 36995.0,
+    "nlc": null,
+    "image": null,
+    "description": ""
+  },
+  {
+    "id": "glen-prod-405",
+    "name": "Cooker Hood 6065  BL MS AC 90cm 1400",
+    "category": "Cooker Hoods",
+    "subCategory": "Online Rates only for Trade",
+    "price": 38995.0,
+    "nlc": null,
+    "image": null,
+    "description": ""
+  },
+  {
+    "id": "glen-prod-406",
+    "name": "Cooker Hood 6065 HSR BLDC BL AC 60 1600",
+    "category": "Cooker Hoods",
+    "subCategory": "Online Rates only for Trade",
+    "price": 38995.0,
+    "nlc": null,
+    "image": null,
+    "description": ""
+  },
+  {
+    "id": "glen-prod-407",
+    "name": "Cooker Hood 6065 HSR BLDC BL AC 75 1600",
+    "category": "Cooker Hoods",
+    "subCategory": "Online Rates only for Trade",
+    "price": 40995.0,
+    "nlc": null,
+    "image": null,
+    "description": ""
+  },
+  {
+    "id": "glen-prod-408",
+    "name": "Cooker Hood 6065 HSR BLDC BL AC 90 1600",
+    "category": "Cooker Hoods",
+    "subCategory": "Online Rates only for Trade",
+    "price": 42995.0,
+    "nlc": null,
+    "image": null,
+    "description": ""
+  },
+  {
+    "id": "glen-prod-409",
+    "name": "Cooker Hood 6068 BL MS AC 60cm 1400",
+    "category": "Cooker Hoods",
+    "subCategory": "Online Rates only for Trade",
+    "price": 30995.0,
+    "nlc": null,
+    "image": null,
+    "description": ""
+  },
+  {
+    "id": "glen-prod-410",
+    "name": "Cooker Hood 6068 BL MS AC 76cm 1400",
+    "category": "Cooker Hoods",
+    "subCategory": "Online Rates only for Trade",
+    "price": 32995.0,
+    "nlc": null,
+    "image": null,
+    "description": ""
+  },
+  {
+    "id": "glen-prod-411",
+    "name": "Cooker Hood 6071R BLDC BL AC 60 1400",
+    "category": "Cooker Hoods",
+    "subCategory": "Online Rates only for Trade",
+    "price": 33995.0,
+    "nlc": null,
+    "image": null,
+    "description": ""
+  },
+  {
+    "id": "glen-prod-412",
+    "name": "Cooker Hood 6071R BLDC BL AC 90 1400",
+    "category": "Cooker Hoods",
+    "subCategory": "Online Rates only for Trade",
+    "price": 37995.0,
+    "nlc": null,
+    "image": null,
+    "description": ""
+  },
+  {
+    "id": "glen-prod-413",
+    "name": "Cooker Hood 6073 SX BL MS AC 60cm 1400",
+    "category": "Cooker Hoods",
+    "subCategory": "Online Rates only for Trade",
+    "price": 37995.0,
+    "nlc": null,
+    "image": null,
+    "description": ""
+  },
+  {
+    "id": "glen-prod-414",
+    "name": "Cooker Hood 6073 SX BL MS AC 75cm 1400",
+    "category": "Cooker Hoods",
+    "subCategory": "Online Rates only for Trade",
+    "price": 39995.0,
+    "nlc": null,
+    "image": null,
+    "description": ""
+  },
+  {
+    "id": "glen-prod-415",
+    "name": "Cooker Hood 6073 SX BL MS AC 90cm 1400",
+    "category": "Cooker Hoods",
+    "subCategory": "Online Rates only for Trade",
+    "price": 41995.0,
+    "nlc": null,
+    "image": null,
+    "description": ""
+  },
+  {
+    "id": "glen-prod-416",
+    "name": "Cooker Hood 6073 HSR BL BLDCAC 60 1600",
+    "category": "Cooker Hoods",
+    "subCategory": "Online Rates only for Trade",
+    "price": 42995.0,
+    "nlc": null,
+    "image": null,
+    "description": ""
+  },
+  {
+    "id": "glen-prod-417",
+    "name": "Cooker Hood 6073 HSR BL BLDCAC 75 1600",
+    "category": "Cooker Hoods",
+    "subCategory": "Online Rates only for Trade",
+    "price": 43995.0,
+    "nlc": null,
+    "image": null,
+    "description": ""
+  },
+  {
+    "id": "glen-prod-418",
+    "name": "Cooker Hood 6073 HSR BL BLDCAC 90 1600",
+    "category": "Cooker Hoods",
+    "subCategory": "Online Rates only for Trade",
+    "price": 44995.0,
+    "nlc": null,
+    "image": null,
+    "description": ""
+  },
+  {
+    "id": "glen-prod-419",
+    "name": "Cooker Hood 6076 DS BLDC AC 60cm 1400",
+    "category": "Cooker Hoods",
+    "subCategory": "Online Rates only for Trade",
+    "price": 40995.0,
+    "nlc": null,
+    "image": null,
+    "description": ""
+  },
+  {
+    "id": "glen-prod-420",
+    "name": "Cooker Hood 6076 HSR BL BLDCAC 60 1600",
+    "category": "Cooker Hoods",
+    "subCategory": "Online Rates only for Trade",
+    "price": 40995.0,
+    "nlc": null,
+    "image": null,
+    "description": ""
+  },
+  {
+    "id": "glen-prod-421",
+    "name": "Cooker Hood 6076 HSR BL BLDCAC 75 1600",
+    "category": "Cooker Hoods",
+    "subCategory": "Online Rates only for Trade",
+    "price": 42995.0,
+    "nlc": null,
+    "image": null,
+    "description": ""
+  },
+  {
+    "id": "glen-prod-422",
+    "name": "Cooker Hood 6076 HSR BL BLDCAC 90 1600",
+    "category": "Cooker Hoods",
+    "subCategory": "Online Rates only for Trade",
+    "price": 43995.0,
+    "nlc": null,
+    "image": null,
+    "description": ""
+  },
+  {
+    "id": "glen-prod-423",
+    "name": "SA 3003 Automatic Soup Maker 1.6L",
+    "category": "Toasters",
+    "subCategory": "Toasters",
+    "price": 10995.0,
+    "nlc": 5181.0,
+    "image": null,
+    "description": ""
+  },
+  {
+    "id": "glen-prod-424",
+    "name": "SA 3014-Glen Auto Pop-up Toaster",
+    "category": "Toasters",
+    "subCategory": "Toasters",
+    "price": 3195.0,
+    "nlc": 1882.0,
+    "image": null,
+    "description": ""
+  },
+  {
+    "id": "glen-prod-425",
+    "name": "SA 3019-Glen Auto Pop-up Toaster",
+    "category": "Toasters",
+    "subCategory": "Toasters",
+    "price": 2895.0,
+    "nlc": 1705.0,
+    "image": null,
+    "description": ""
+  },
+  {
+    "id": "glen-prod-426",
+    "name": "SA 3022 Multi Snack Maker",
+    "category": "Toasters",
+    "subCategory": "Toasters",
+    "price": 4195.0,
+    "nlc": 2471.0,
+    "image": null,
+    "description": ""
+  },
+  {
+    "id": "glen-prod-427",
+    "name": "SA3023 Jumbo Multi Snack Maker",
+    "category": "Toasters",
+    "subCategory": "Toasters",
+    "price": 5995.0,
+    "nlc": 3531.0,
+    "image": null,
+    "description": ""
+  },
+  {
+    "id": "glen-prod-428",
+    "name": "SA 3024 Sandwich Maker Black - Grill",
+    "category": "Toasters",
+    "subCategory": "Toasters",
+    "price": 2095.0,
+    "nlc": 1234.0,
+    "image": null,
+    "description": ""
+  },
+  {
+    "id": "glen-prod-429",
+    "name": "SA 3024 Sandwich Maker Black - Sandwich",
+    "category": "Toasters",
+    "subCategory": "Toasters",
+    "price": 2095.0,
+    "nlc": 1234.0,
+    "image": null,
+    "description": ""
+  },
+  {
+    "id": "glen-prod-430",
+    "name": "SA 3024 Waffle Maker Black",
+    "category": "Toasters",
+    "subCategory": "Toasters",
+    "price": 2495.0,
+    "nlc": 1469.0,
+    "image": null,
+    "description": ""
+  },
+  {
+    "id": "glen-prod-431",
+    "name": "SA 3025 Jumbo Sanwich Maker",
+    "category": "Toasters",
+    "subCategory": "Toasters",
+    "price": 3995.0,
+    "nlc": 2353.0,
+    "image": null,
+    "description": ""
+  },
+  {
+    "id": "glen-prod-432",
+    "name": "SA 3025 Jumbo Grill",
+    "category": "Toasters",
+    "subCategory": "Toasters",
+    "price": 3995.0,
+    "nlc": 2353.0,
+    "image": null,
+    "description": ""
+  },
+  {
+    "id": "glen-prod-433",
+    "name": "SA 3026 Sandwich Maker Black - Grill",
+    "category": "Toasters",
+    "subCategory": "Toasters",
+    "price": 2095.0,
+    "nlc": 1151.0,
+    "image": null,
+    "description": ""
+  },
+  {
+    "id": "glen-prod-434",
+    "name": "SA 3026 Sandwich Maker Black - Sandwich",
+    "category": "Toasters",
+    "subCategory": "Toasters",
+    "price": 2095.0,
+    "nlc": 1151.0,
+    "image": null,
+    "description": ""
+  },
+  {
+    "id": "glen-prod-435",
+    "name": "SA 3029 Press Grill",
+    "category": "Toasters",
+    "subCategory": "Toasters",
+    "price": 3195.0,
+    "nlc": 1882.0,
+    "image": null,
+    "description": ""
+  },
+  {
+    "id": "glen-prod-436",
+    "name": "SA 3029 Press Grill Ceramic",
+    "category": "Toasters",
+    "subCategory": "Toasters",
+    "price": 3195.0,
+    "nlc": 1882.0,
+    "image": null,
+    "description": ""
+  },
+  {
+    "id": "glen-prod-437",
+    "name": "SA 3030 Glen Egg Boiler 7 350W",
+    "category": "Toasters",
+    "subCategory": "Toasters",
+    "price": 1295.0,
+    "nlc": 781.0,
+    "image": null,
+    "description": ""
+  },
+  {
+    "id": "glen-prod-438",
+    "name": "SA 3031IN Contact Grill",
+    "category": "Toasters",
+    "subCategory": "Toasters",
+    "price": 6395.0,
+    "nlc": 3666.0,
+    "image": null,
+    "description": ""
+  },
+  {
+    "id": "glen-prod-439",
+    "name": "SA 3033 Pizza Grill",
+    "category": "Toasters",
+    "subCategory": "Toasters",
+    "price": 5695.0,
+    "nlc": 3354.0,
+    "image": null,
+    "description": ""
+  },
+  {
+    "id": "glen-prod-440",
+    "name": "SA 3035 Glen Multi Cook Plus",
+    "category": "Toasters",
+    "subCategory": "Toasters",
+    "price": 2995.0,
+    "nlc": 1764.0,
+    "image": null,
+    "description": ""
+  },
+  {
+    "id": "glen-prod-441",
+    "name": "SA 3039 Glen Atta Kneader Bread Maker",
+    "category": "Toasters",
+    "subCategory": "Toasters",
+    "price": 12395.0,
+    "nlc": 7301.0,
+    "image": null,
+    "description": ""
+  },
+  {
+    "id": "glen-prod-442",
+    "name": "SA 3043 Glen Digital Fryer 6.0 Ltr SS",
+    "category": "Air Fryer",
+    "subCategory": "Air Fryer",
+    "price": 9495.0,
+    "nlc": 5179.0,
+    "image": null,
+    "description": ""
+  },
+  {
+    "id": "glen-prod-443",
+    "name": "SA 3045 Mini Fryer 2.0 Ltr",
+    "category": "Air Fryer",
+    "subCategory": "Air Fryer",
+    "price": 7995.0,
+    "nlc": 4395.0,
+    "image": null,
+    "description": ""
+  },
+  {
+    "id": "glen-prod-444",
+    "name": "SA 3045 Glen Digital Fryer 6.0 Ltr Black",
+    "category": "Air Fryer",
+    "subCategory": "Air Fryer",
+    "price": 8995.0,
+    "nlc": 4945.0,
+    "image": null,
+    "description": ""
+  },
+  {
+    "id": "glen-prod-445",
+    "name": "SA 3049 Glen Rapid Fryer 3.8Ltr SBL",
+    "category": "Air Fryer",
+    "subCategory": "Air Fryer",
+    "price": 9395.0,
+    "nlc": 5534.0,
+    "image": null,
+    "description": ""
+  },
+  {
+    "id": "glen-prod-446",
+    "name": "SA 3050 Glen Air Fryer Oven 25L",
+    "category": "Air Fryer",
+    "subCategory": "Air Fryer",
+    "price": 15995.0,
+    "nlc": 8165.0,
+    "image": null,
+    "description": ""
+  },
+  {
+    "id": "glen-prod-447",
+    "name": "SA 3050 Glen Digital Air Fryer Oven 25L",
+    "category": "Air Fryer",
+    "subCategory": "Air Fryer",
+    "price": 19995.0,
+    "nlc": 10207.0,
+    "image": null,
+    "description": ""
+  },
+  {
+    "id": "glen-prod-448",
+    "name": "SA 3061 Glen Digital Fryer 4.2 Ltr Black",
+    "category": "Air Fryer",
+    "subCategory": "Air Fryer",
+    "price": 8495.0,
+    "nlc": 4336.0,
+    "image": null,
+    "description": ""
+  },
+  {
+    "id": "glen-prod-449",
+    "name": "SA 3062 Glen Digital Fryer 6.0 Ltr Black",
+    "category": "Air Fryer",
+    "subCategory": "Air Fryer",
+    "price": 9895.0,
+    "nlc": 5051.0,
+    "image": null,
+    "description": ""
+  },
+  {
+    "id": "glen-prod-450",
+    "name": "SA 3064 Glen Digital Fryer 6L Full Touch",
+    "category": "Air Fryer",
+    "subCategory": "Air Fryer",
+    "price": 10395.0,
+    "nlc": 5306.0,
+    "image": null,
+    "description": ""
+  },
+  {
+    "id": "glen-prod-451",
+    "name": "SA 3066 Glen Digital Fryer 8.0 Ltr Black",
+    "category": "Air Fryer",
+    "subCategory": "Air Fryer",
+    "price": 13995.0,
+    "nlc": 7144.0,
+    "image": null,
+    "description": ""
+  },
+  {
+    "id": "glen-prod-452",
+    "name": "SA 3067 Glen Digital Air Fryer Oven 36L",
+    "category": "Air Fryer",
+    "subCategory": "Air Fryer",
+    "price": 21995.0,
+    "nlc": 11228.0,
+    "image": null,
+    "description": ""
+  },
+  {
+    "id": "glen-prod-453",
+    "name": "SA 3051 Multi Food Steamer",
+    "category": "Steam Cooker",
+    "subCategory": "Steam Cooker",
+    "price": 4495.0,
+    "nlc": 2294.0,
+    "image": null,
+    "description": ""
+  },
+  {
+    "id": "glen-prod-454",
+    "name": "SA 3052 Food Steamer",
+    "category": "Steam Cooker",
+    "subCategory": "Steam Cooker",
+    "price": 5495.0,
+    "nlc": 3236.0,
+    "image": null,
+    "description": ""
+  },
+  {
+    "id": "glen-prod-455",
+    "name": "SA 3054 Mini Cooker\u20130.8L 500W Red",
+    "category": "Steam Cooker",
+    "subCategory": "Steam Cooker",
+    "price": 3295.0,
+    "nlc": 1940.0,
+    "image": null,
+    "description": ""
+  },
+  {
+    "id": "glen-prod-456",
+    "name": "SA 3054 Mini Cooker\u20130.8L 500W White",
+    "category": "Steam Cooker",
+    "subCategory": "Steam Cooker",
+    "price": 3295.0,
+    "nlc": 1940.0,
+    "image": null,
+    "description": ""
+  },
+  {
+    "id": "glen-prod-457",
+    "name": "SA 3071 Glen Induction Stove 1200W",
+    "category": "Induction Cooker",
+    "subCategory": "Induction Cooker",
+    "price": 3395.0,
+    "nlc": 1999.0,
+    "image": null,
+    "description": ""
+  },
+  {
+    "id": "glen-prod-458",
+    "name": "SA 3081N Induction Stove Touch 2000W",
+    "category": "Induction Cooker",
+    "subCategory": "Induction Cooker",
+    "price": 5495.0,
+    "nlc": 3236.0,
+    "image": null,
+    "description": ""
+  },
+  {
+    "id": "glen-prod-459",
+    "name": "SA 3072 Infrared Cooking Stove 2200W",
+    "category": "Induction Cooker",
+    "subCategory": "Induction Cooker",
+    "price": 5495.0,
+    "nlc": 2934.0,
+    "image": null,
+    "description": ""
+  },
+  {
+    "id": "glen-prod-460",
+    "name": "SA 3074 Infrared Cooking Stove 2000W",
+    "category": "Induction Cooker",
+    "subCategory": "Induction Cooker",
+    "price": 5495.0,
+    "nlc": 2934.0,
+    "image": null,
+    "description": ""
+  },
+  {
+    "id": "glen-prod-461",
+    "name": "SA 3075 Infrared Cooking Stove 2000W",
+    "category": "Induction Cooker",
+    "subCategory": "Induction Cooker",
+    "price": 5695.0,
+    "nlc": 3130.0,
+    "image": null,
+    "description": ""
+  },
+  {
+    "id": "glen-prod-462",
+    "name": "SA 3076 Infrared Cooking Stove 2200W",
+    "category": "Induction Cooker",
+    "subCategory": "Induction Cooker",
+    "price": 5495.0,
+    "nlc": 2805.0,
+    "image": null,
+    "description": ""
+  },
+  {
+    "id": "glen-prod-463",
+    "name": "SA 3077 Infrared Cooking Stove 2200W",
+    "category": "Induction Cooker",
+    "subCategory": "Induction Cooker",
+    "price": 5295.0,
+    "nlc": 2703.0,
+    "image": null,
+    "description": ""
+  },
+  {
+    "id": "glen-prod-464",
+    "name": "SA 4010 Juicer Mixer Grinder 2 Jar ISI",
+    "category": "Food Preperation",
+    "subCategory": "Food Preperation",
+    "price": 4695.0,
+    "nlc": 2654.0,
+    "image": null,
+    "description": ""
+  },
+  {
+    "id": "glen-prod-465",
+    "name": "SA 4012 Juicer Mixer Grinder 2 Jar ISI",
+    "category": "Food Preperation",
+    "subCategory": "Food Preperation",
+    "price": 4595.0,
+    "nlc": 2598.0,
+    "image": null,
+    "description": ""
+  },
+  {
+    "id": "glen-prod-466",
+    "name": "SA 4014 Juicer Mixer Grinder 3 Jar 600W",
+    "category": "Food Preperation",
+    "subCategory": "Food Preperation",
+    "price": 5995.0,
+    "nlc": 3390.0,
+    "image": null,
+    "description": ""
+  },
+  {
+    "id": "glen-prod-467",
+    "name": "SA 4014 Juicer 600W",
+    "category": "Food Preperation",
+    "subCategory": "Food Preperation",
+    "price": 4495.0,
+    "nlc": 2541.0,
+    "image": null,
+    "description": ""
+  },
+  {
+    "id": "glen-prod-468",
+    "name": "SA 4015 Hopper Slow Juicer 108mm",
+    "category": "Food Preperation",
+    "subCategory": "Food Preperation",
+    "price": 16665.0,
+    "nlc": 7853.0,
+    "image": null,
+    "description": ""
+  },
+  {
+    "id": "glen-prod-469",
+    "name": "SA 4016 Hopper Slow Juicer 130mm",
+    "category": "Food Preperation",
+    "subCategory": "Food Preperation",
+    "price": 21665.0,
+    "nlc": 10209.0,
+    "image": null,
+    "description": ""
+  },
+  {
+    "id": "glen-prod-470",
+    "name": "SA 4017 Cold Press Slow Juicer",
+    "category": "Food Preperation",
+    "subCategory": "Food Preperation",
+    "price": 20995.0,
+    "nlc": 8244.0,
+    "image": null,
+    "description": ""
+  },
+  {
+    "id": "glen-prod-471",
+    "name": "SA 4018 Slow Juicer Full Apple",
+    "category": "Food Preperation",
+    "subCategory": "Food Preperation",
+    "price": 25990.0,
+    "nlc": 14288.0,
+    "image": null,
+    "description": ""
+  },
+  {
+    "id": "glen-prod-472",
+    "name": "SA 4019 Centrifugal Juicer 600W",
+    "category": "Food Preperation",
+    "subCategory": "Food Preperation",
+    "price": 6695.0,
+    "nlc": 3680.0,
+    "image": null,
+    "description": ""
+  },
+  {
+    "id": "glen-prod-473",
+    "name": "SA 4021 Mixer Grinder 550W 3Jar",
+    "category": "Food Preperation",
+    "subCategory": "Food Preperation",
+    "price": 4495.0,
+    "nlc": 2259.0,
+    "image": null,
+    "description": ""
+  },
+  {
+    "id": "glen-prod-474",
+    "name": "SA 4022 Mixer Grinder 750W Plus",
+    "category": "Food Preperation",
+    "subCategory": "Food Preperation",
+    "price": 7995.0,
+    "nlc": 4395.0,
+    "image": null,
+    "description": ""
+  },
+  {
+    "id": "glen-prod-475",
+    "name": "SA 4022 Platinum Mixer Grinder 750W ISI",
+    "category": "Food Preperation",
+    "subCategory": "Food Preperation",
+    "price": 7995.0,
+    "nlc": 4395.0,
+    "image": null,
+    "description": ""
+  },
+  {
+    "id": "glen-prod-476",
+    "name": "SA 4022 Platinum Plus MG 750W ISI",
+    "category": "Food Preperation",
+    "subCategory": "Food Preperation",
+    "price": 8795.0,
+    "nlc": 4835.0,
+    "image": null,
+    "description": ""
+  },
+  {
+    "id": "glen-prod-477",
+    "name": "SA 4023 Mixer Grinder 750W 3 Jar",
+    "category": "Food Preperation",
+    "subCategory": "Food Preperation",
+    "price": 4995.0,
+    "nlc": 2746.0,
+    "image": null,
+    "description": ""
+  },
+  {
+    "id": "glen-prod-478",
+    "name": "SA 4023 Mixer Grinder Plus 750W 4 Jar",
+    "category": "Food Preperation",
+    "subCategory": "Food Preperation",
+    "price": 5495.0,
+    "nlc": 3021.0,
+    "image": null,
+    "description": ""
+  },
+  {
+    "id": "glen-prod-479",
+    "name": "SA 4024 Mixer Grinder 650W 3Jar",
+    "category": "Food Preperation",
+    "subCategory": "Food Preperation",
+    "price": 4795.0,
+    "nlc": 2259.0,
+    "image": null,
+    "description": ""
+  },
+  {
+    "id": "glen-prod-480",
+    "name": "SA 4030 MIXER GRINDER 750W 3 JAR ISI",
+    "category": "Food Preperation",
+    "subCategory": "Food Preperation",
+    "price": 6395.0,
+    "nlc": 3616.0,
+    "image": null,
+    "description": ""
+  },
+  {
+    "id": "glen-prod-481",
+    "name": "SA 4030 MIXER GRINDER 750W PLUS ISI",
+    "category": "Food Preperation",
+    "subCategory": "Food Preperation",
+    "price": 7995.0,
+    "nlc": 4709.0,
+    "image": null,
+    "description": ""
+  },
+  {
+    "id": "glen-prod-482",
+    "name": "SA 4031 MIXER GRINDER Ultra Tuff 4 Jars",
+    "category": "Food Preperation",
+    "subCategory": "Food Preperation",
+    "price": 9195.0,
+    "nlc": 5415.0,
+    "image": null,
+    "description": ""
+  },
+  {
+    "id": "glen-prod-483",
+    "name": "SA 4041 Mini Chopper",
+    "category": "Food Preperation",
+    "subCategory": "Food Preperation",
+    "price": 2295.0,
+    "nlc": 1171.0,
+    "image": null,
+    "description": ""
+  },
+  {
+    "id": "glen-prod-484",
+    "name": "SA 4042 Turbo Plus Glen Chopper 300W",
+    "category": "Food Preperation",
+    "subCategory": "Food Preperation",
+    "price": 3195.0,
+    "nlc": 1631.0,
+    "image": null,
+    "description": ""
+  },
+  {
+    "id": "glen-prod-485",
+    "name": "SA 4043 Glen Mini Chopper",
+    "category": "Food Preperation",
+    "subCategory": "Food Preperation",
+    "price": 2395.0,
+    "nlc": 1222.0,
+    "image": null,
+    "description": ""
+  },
+  {
+    "id": "glen-prod-486",
+    "name": "SA 4043 Plus Glen Mini Chopper",
+    "category": "Food Preperation",
+    "subCategory": "Food Preperation",
+    "price": 2695.0,
+    "nlc": 1375.0,
+    "image": null,
+    "description": ""
+  },
+  {
+    "id": "glen-prod-487",
+    "name": "SA 4043 Turbo Glen Mini Chopper",
+    "category": "Food Preperation",
+    "subCategory": "Food Preperation",
+    "price": 2695.0,
+    "nlc": 1375.0,
+    "image": null,
+    "description": ""
+  },
+  {
+    "id": "glen-prod-488",
+    "name": "SA 4045NG Glen Mini Grinder 350w ISI",
+    "category": "Food Preperation",
+    "subCategory": "Food Preperation",
+    "price": 3095.0,
+    "nlc": 1580.0,
+    "image": null,
+    "description": ""
+  },
+  {
+    "id": "glen-prod-489",
+    "name": "SA 4045MMG Glen Multi Mixer Grinder 350w",
+    "category": "Food Preperation",
+    "subCategory": "Food Preperation",
+    "price": 3195.0,
+    "nlc": 1631.0,
+    "image": null,
+    "description": ""
+  },
+  {
+    "id": "glen-prod-490",
+    "name": "SA 4045BG Glen Mini Blender+Grinder",
+    "category": "Food Preperation",
+    "subCategory": "Food Preperation",
+    "price": 3995.0,
+    "nlc": 2039.0,
+    "image": null,
+    "description": ""
+  },
+  {
+    "id": "glen-prod-491",
+    "name": "SA 4048N Multi-Function Blender",
+    "category": "Food Preperation",
+    "subCategory": "Food Preperation",
+    "price": 6295.0,
+    "nlc": 2966.0,
+    "image": null,
+    "description": ""
+  },
+  {
+    "id": "glen-prod-492",
+    "name": "SA 4048 Active Blender Ultra TUFF Plus",
+    "category": "Food Preperation",
+    "subCategory": "Food Preperation",
+    "price": 11665.0,
+    "nlc": 5497.0,
+    "image": null,
+    "description": ""
+  },
+  {
+    "id": "glen-prod-493",
+    "name": "SA 4049 Hand Blender 200W ISI",
+    "category": "Food Preperation",
+    "subCategory": "Food Preperation",
+    "price": 2295.0,
+    "nlc": 1171.0,
+    "image": null,
+    "description": ""
+  },
+  {
+    "id": "glen-prod-494",
+    "name": "SA 4049 DX Hand Blender 200W ISI Black",
+    "category": "Food Preperation",
+    "subCategory": "Food Preperation",
+    "price": 2395.0,
+    "nlc": 1222.0,
+    "image": null,
+    "description": ""
+  },
+  {
+    "id": "glen-prod-495",
+    "name": "SA 4052 Food Processor LX",
+    "category": "Food Preperation",
+    "subCategory": "Food Preperation",
+    "price": 10995.0,
+    "nlc": 6044.0,
+    "image": null,
+    "description": ""
+  },
+  {
+    "id": "glen-prod-496",
+    "name": "SA 4058 Glen Hand Beater 200W",
+    "category": "Food Preperation",
+    "subCategory": "Food Preperation",
+    "price": 2995.0,
+    "nlc": 1528.0,
+    "image": null,
+    "description": ""
+  },
+  {
+    "id": "glen-prod-497",
+    "name": "SA 4059 Glen Hand Beater 125W",
+    "category": "Food Preperation",
+    "subCategory": "Food Preperation",
+    "price": 2695.0,
+    "nlc": 1375.0,
+    "image": null,
+    "description": ""
+  },
+  {
+    "id": "glen-prod-498",
+    "name": "SA 4063 Turbo Hand Blender Black 350W",
+    "category": "Food Preperation",
+    "subCategory": "Food Preperation",
+    "price": 2995.0,
+    "nlc": 1528.0,
+    "image": null,
+    "description": ""
+  },
+  {
+    "id": "glen-prod-499",
+    "name": "SA 4063 Turbo Hand Blender Chopper 350W",
+    "category": "Food Preperation",
+    "subCategory": "Food Preperation",
+    "price": 3995.0,
+    "nlc": 2039.0,
+    "image": null,
+    "description": ""
+  },
+  {
+    "id": "glen-prod-500",
+    "name": "SA 4063 Turbo Hand Blender CH WH 350W",
+    "category": "Food Preperation",
+    "subCategory": "Food Preperation",
+    "price": 4795.0,
+    "nlc": 2447.0,
+    "image": null,
+    "description": ""
+  },
+  {
+    "id": "glen-prod-501",
+    "name": "SA 5060 Oven Toaster Griller 60 Litre BL",
+    "category": "Oven Toaster Griller",
+    "subCategory": "Oven Toaster Griller",
+    "price": 20995.0,
+    "nlc": 12367.0,
+    "image": null,
+    "description": ""
+  },
+  {
+    "id": "glen-prod-502",
+    "name": "SA 5023 Oven Toaster Grill Digital 23L",
+    "category": "Oven Toaster Griller",
+    "subCategory": "Oven Toaster Griller",
+    "price": 13495.0,
+    "nlc": 7949.0,
+    "image": null,
+    "description": ""
+  },
+  {
+    "id": "glen-prod-503",
+    "name": "SA 5035 Oven Toaster Grill Digital 35L",
+    "category": "Oven Toaster Griller",
+    "subCategory": "Oven Toaster Griller",
+    "price": 16995.0,
+    "nlc": 10010.0,
+    "image": null,
+    "description": ""
+  },
+  {
+    "id": "glen-prod-504",
+    "name": "SA 5045 Oven Toaster Grill Digital 45L",
+    "category": "Oven Toaster Griller",
+    "subCategory": "Oven Toaster Griller",
+    "price": 19995.0,
+    "nlc": 11778.0,
+    "image": null,
+    "description": ""
+  },
+  {
+    "id": "glen-prod-505",
+    "name": "SA 5045 Oven Toaster Grill Rot+Con Black",
+    "category": "Oven Toaster Griller",
+    "subCategory": "Oven Toaster Griller",
+    "price": 12995.0,
+    "nlc": 7654.0,
+    "image": null,
+    "description": ""
+  },
+  {
+    "id": "glen-prod-506",
+    "name": "SA 5014 Glen Electric Tandoor S.Steel",
+    "category": "Tandoor",
+    "subCategory": "Tandoor",
+    "price": 7995.0,
+    "nlc": 4395.0,
+    "image": null,
+    "description": ""
+  },
+  {
+    "id": "glen-prod-507",
+    "name": "SA 5014 Electric Tandoor Extra Large",
+    "category": "Tandoor",
+    "subCategory": "Tandoor",
+    "price": 10495.0,
+    "nlc": 5769.0,
+    "image": null,
+    "description": ""
+  },
+  {
+    "id": "glen-prod-508",
+    "name": "SA-9001 Glass Tea Kettle 1.8 L White",
+    "category": "Kettles",
+    "subCategory": "Kettles",
+    "price": 2695.0,
+    "nlc": 1375.0,
+    "image": null,
+    "description": ""
+  },
+  {
+    "id": "glen-prod-509",
+    "name": "SA-9001 Glass Tea Kettle 1.8 L Black",
+    "category": "Kettles",
+    "subCategory": "Kettles",
+    "price": 2695.0,
+    "nlc": 1375.0,
+    "image": null,
+    "description": ""
+  },
+  {
+    "id": "glen-prod-510",
+    "name": "SA 9002 Electric Kettle  1.8 Ltr 1350W",
+    "category": "Kettles",
+    "subCategory": "Kettles",
+    "price": 1395.0,
+    "nlc": 635.0,
+    "image": null,
+    "description": ""
+  },
+  {
+    "id": "glen-prod-511",
+    "name": "SA9003 Glass Kettle 1.5 L Black",
+    "category": "Kettles",
+    "subCategory": "Kettles",
+    "price": 2295.0,
+    "nlc": 1171.0,
+    "image": null,
+    "description": ""
+  },
+  {
+    "id": "glen-prod-512",
+    "name": "SA 9004 Electric Kettle Black  0.8 Ltr 800W",
+    "category": "Kettles",
+    "subCategory": "Kettles",
+    "price": 2295.0,
+    "nlc": 1261.0,
+    "image": null,
+    "description": ""
+  },
+  {
+    "id": "glen-prod-513",
+    "name": "SA 9004 Electric Kettle Red  0.8 Ltr 800W",
+    "category": "Kettles",
+    "subCategory": "Kettles",
+    "price": 2295.0,
+    "nlc": 1261.0,
+    "image": null,
+    "description": ""
+  },
+  {
+    "id": "glen-prod-514",
+    "name": "SA 9004 Electric Kettle White 0.8 Ltr 800W",
+    "category": "Kettles",
+    "subCategory": "Kettles",
+    "price": 2295.0,
+    "nlc": 1261.0,
+    "image": null,
+    "description": ""
+  },
+  {
+    "id": "glen-prod-515",
+    "name": "SA 9005 Electric Kettle Black  1.8 Ltr 1500W",
+    "category": "Kettles",
+    "subCategory": "Kettles",
+    "price": 2295.0,
+    "nlc": 1261.0,
+    "image": null,
+    "description": ""
+  },
+  {
+    "id": "glen-prod-516",
+    "name": "SA 9005 Electric Kettle Red  1.8 Ltr 1500W",
+    "category": "Kettles",
+    "subCategory": "Kettles",
+    "price": 2295.0,
+    "nlc": 1261.0,
+    "image": null,
+    "description": ""
+  },
+  {
+    "id": "glen-prod-517",
+    "name": "SA 9005 Electric Kettle White 1.8 Ltr 1500W",
+    "category": "Kettles",
+    "subCategory": "Kettles",
+    "price": 2295.0,
+    "nlc": 1261.0,
+    "image": null,
+    "description": ""
+  },
+  {
+    "id": "glen-prod-518",
+    "name": "SA-9008 Electric Kettle Digital GL 1.5L",
+    "category": "Kettles",
+    "subCategory": "Kettles",
+    "price": 5695.0,
+    "nlc": 2907.0,
+    "image": null,
+    "description": ""
+  },
+  {
+    "id": "glen-prod-519",
+    "name": "SA-9009 Electric Kettle Digital SSB 1.5L",
+    "category": "Kettles",
+    "subCategory": "Kettles",
+    "price": 5495.0,
+    "nlc": 2805.0,
+    "image": null,
+    "description": ""
+  },
+  {
+    "id": "glen-prod-520",
+    "name": "SA 9013 SS Travel Kettle 0.5Ltr",
+    "category": "Kettles",
+    "subCategory": "Kettles",
+    "price": 1995.0,
+    "nlc": 1096.0,
+    "image": null,
+    "description": ""
+  },
+  {
+    "id": "glen-prod-521",
+    "name": "SA 3000 Warmer Plate",
+    "category": "Toasters",
+    "subCategory": "Online Rates",
+    "price": 1595.0,
+    "nlc": null,
+    "image": null,
+    "description": ""
+  },
+  {
+    "id": "glen-prod-522",
+    "name": "SA 3001 Warmer Plate",
+    "category": "Toasters",
+    "subCategory": "Online Rates",
+    "price": 2995.0,
+    "nlc": null,
+    "image": null,
+    "description": ""
+  },
+  {
+    "id": "glen-prod-523",
+    "name": "SA 3002 Electric Hot Plate 1000W",
+    "category": "Toasters",
+    "subCategory": "Online Rates",
+    "price": 2995.0,
+    "nlc": null,
+    "image": null,
+    "description": ""
+  },
+  {
+    "id": "glen-prod-524",
+    "name": "SA 3003 Electric Hot Plate 1250W",
+    "category": "Toasters",
+    "subCategory": "Online Rates",
+    "price": 3295.0,
+    "nlc": null,
+    "image": null,
+    "description": ""
+  },
+  {
+    "id": "glen-prod-525",
+    "name": "SA 3021 Sandwich Maker Black - Grill",
+    "category": "Toasters",
+    "subCategory": "Online Rates",
+    "price": 1995.0,
+    "nlc": null,
+    "image": null,
+    "description": ""
+  },
+  {
+    "id": "glen-prod-526",
+    "name": "SA 3021 Sandwich Maker Black - Sandwich",
+    "category": "Toasters",
+    "subCategory": "Online Rates",
+    "price": 1995.0,
+    "nlc": null,
+    "image": null,
+    "description": ""
+  },
+  {
+    "id": "glen-prod-527",
+    "name": "SA 3026 Waffle Maker Black",
+    "category": "Toasters",
+    "subCategory": "Online Rates",
+    "price": 3395.0,
+    "nlc": null,
+    "image": null,
+    "description": ""
+  },
+  {
+    "id": "glen-prod-528",
+    "name": "SA 3032 Atta Kneader Dough Maker",
+    "category": "Toasters",
+    "subCategory": "Online Rates",
+    "price": 6665.0,
+    "nlc": null,
+    "image": null,
+    "description": ""
+  },
+  {
+    "id": "glen-prod-529",
+    "name": "SA 3032 Atta Kneader Dough Maker Black",
+    "category": "Toasters",
+    "subCategory": "Online Rates",
+    "price": 6995.0,
+    "nlc": null,
+    "image": null,
+    "description": ""
+  },
+  {
+    "id": "glen-prod-530",
+    "name": "SA 3034 Glen Bread Maker",
+    "category": "Toasters",
+    "subCategory": "Online Rates",
+    "price": 13995.0,
+    "nlc": null,
+    "image": null,
+    "description": ""
+  },
+  {
+    "id": "glen-prod-531",
+    "name": "SA 3035 Glen Multi Cook",
+    "category": "Toasters",
+    "subCategory": "Online Rates",
+    "price": 2495.0,
+    "nlc": null,
+    "image": null,
+    "description": ""
+  },
+  {
+    "id": "glen-prod-532",
+    "name": "SA 3036 Glen Egg  Boiler Steamer",
+    "category": "Toasters",
+    "subCategory": "Online Rates",
+    "price": 1995.0,
+    "nlc": null,
+    "image": null,
+    "description": ""
+  },
+  {
+    "id": "glen-prod-533",
+    "name": "SA 3036 Glen Egg  Boiler Steamer Plus",
+    "category": "Toasters",
+    "subCategory": "Online Rates",
+    "price": 2295.0,
+    "nlc": null,
+    "image": null,
+    "description": ""
+  },
+  {
+    "id": "glen-prod-534",
+    "name": "3038 N Dosa Maker 30cm",
+    "category": "Toasters",
+    "subCategory": "Online Rates",
+    "price": 3695.0,
+    "nlc": null,
+    "image": null,
+    "description": ""
+  },
+  {
+    "id": "glen-prod-535",
+    "name": "SA 3040 Glen Digital Fryer 12L",
+    "category": "Air Fryer",
+    "subCategory": "Online Rates",
+    "price": 18995.0,
+    "nlc": null,
+    "image": null,
+    "description": ""
+  },
+  {
+    "id": "glen-prod-536",
+    "name": "SA 3040 Fryer Basket Attachment",
+    "category": "Air Fryer",
+    "subCategory": "Online Rates",
+    "price": 1295.0,
+    "nlc": null,
+    "image": null,
+    "description": ""
+  },
+  {
+    "id": "glen-prod-537",
+    "name": "SA 3041 Glen Digital Fryer 5 Ltr Black",
+    "category": "Air Fryer",
+    "subCategory": "Online Rates",
+    "price": 7995.0,
+    "nlc": null,
+    "image": null,
+    "description": ""
+  },
+  {
+    "id": "glen-prod-538",
+    "name": "SA 4023 Mixer Grinder 500W 3 Jar",
+    "category": "Food Preperation",
+    "subCategory": "Online Rates",
+    "price": 4395.0,
+    "nlc": null,
+    "image": null,
+    "description": ""
+  },
+  {
+    "id": "glen-prod-539",
+    "name": "SA 4023 Mixer Grinder Platinum 750W",
+    "category": "Food Preperation",
+    "subCategory": "Online Rates",
+    "price": 6195.0,
+    "nlc": null,
+    "image": null,
+    "description": ""
+  },
+  {
+    "id": "glen-prod-540",
+    "name": "SA 4031 MIXER GRINDER Ultra Tuff 3 Jars",
+    "category": "Food Preperation",
+    "subCategory": "Online Rates",
+    "price": 8495.0,
+    "nlc": null,
+    "image": null,
+    "description": ""
+  },
+  {
+    "id": "glen-prod-541",
+    "name": "SA 4040 Glen Mini Chopper Black ISI 200W",
+    "category": "Food Preperation",
+    "subCategory": "Online Rates",
+    "price": 2295.0,
+    "nlc": null,
+    "image": null,
+    "description": ""
+  },
+  {
+    "id": "glen-prod-542",
+    "name": "SA 4041 Mini Chopper Black",
+    "category": "Food Preperation",
+    "subCategory": "Online Rates",
+    "price": 2395.0,
+    "nlc": null,
+    "image": null,
+    "description": ""
+  },
+  {
+    "id": "glen-prod-543",
+    "name": "SA 4043 Plus Glen Mini Chopper - Black",
+    "category": "Food Preperation",
+    "subCategory": "Online Rates",
+    "price": 2795.0,
+    "nlc": null,
+    "image": null,
+    "description": ""
+  },
+  {
+    "id": "glen-prod-544",
+    "name": "SA 4043 Turbo Glen Mini Chopper - Black",
+    "category": "Food Preperation",
+    "subCategory": "Online Rates",
+    "price": 2795.0,
+    "nlc": null,
+    "image": null,
+    "description": ""
+  },
+  {
+    "id": "glen-prod-545",
+    "name": "SA 4046 Blender Glass Jar",
+    "category": "Food Preperation",
+    "subCategory": "Online Rates",
+    "price": 5995.0,
+    "nlc": null,
+    "image": null,
+    "description": ""
+  },
+  {
+    "id": "glen-prod-546",
+    "name": "SA 4047 I Blender Black",
+    "category": "Food Preperation",
+    "subCategory": "Online Rates",
+    "price": 3295.0,
+    "nlc": null,
+    "image": null,
+    "description": ""
+  },
+  {
+    "id": "glen-prod-547",
+    "name": "SA 4048 Active Blender",
+    "category": "Food Preperation",
+    "subCategory": "Online Rates",
+    "price": 4195.0,
+    "nlc": null,
+    "image": null,
+    "description": ""
+  },
+  {
+    "id": "glen-prod-548",
+    "name": "SA 4048 Active Blender 2Jar + Sipper Cap",
+    "category": "Food Preperation",
+    "subCategory": "Online Rates",
+    "price": 4395.0,
+    "nlc": null,
+    "image": null,
+    "description": ""
+  },
+  {
+    "id": "glen-prod-549",
+    "name": "SA 4048 Active Blender 2Jar + Bottle",
+    "category": "Food Preperation",
+    "subCategory": "Online Rates",
+    "price": 4895.0,
+    "nlc": null,
+    "image": null,
+    "description": ""
+  },
+  {
+    "id": "glen-prod-550",
+    "name": "SA 4048 Active Blender Grinder C Gold",
+    "category": "Food Preperation",
+    "subCategory": "Online Rates",
+    "price": 4995.0,
+    "nlc": null,
+    "image": null,
+    "description": ""
+  },
+  {
+    "id": "glen-prod-551",
+    "name": "SA 4048 Active Blender Grinder Red",
+    "category": "Food Preperation",
+    "subCategory": "Online Rates",
+    "price": 4995.0,
+    "nlc": null,
+    "image": null,
+    "description": ""
+  },
+  {
+    "id": "glen-prod-552",
+    "name": "SA 4048 Active Blender Ultra TUFF",
+    "category": "Food Preperation",
+    "subCategory": "Online Rates",
+    "price": 9995.0,
+    "nlc": null,
+    "image": null,
+    "description": ""
+  },
+  {
+    "id": "glen-prod-553",
+    "name": "SA 4049 Hand Blender Black 200W ISI",
+    "category": "Food Preperation",
+    "subCategory": "Online Rates",
+    "price": 2295.0,
+    "nlc": null,
+    "image": null,
+    "description": ""
+  },
+  {
+    "id": "glen-prod-554",
+    "name": "SA 5009E Glen Oven Toaster BL 9 Litre",
+    "category": "Oven Toaster Griller",
+    "subCategory": "Online Rates",
+    "price": 4495.0,
+    "nlc": null,
+    "image": null,
+    "description": ""
+  },
+  {
+    "id": "glen-prod-555",
+    "name": "SA 5018 Oven Toaster Grill Black",
+    "category": "Oven Toaster Griller",
+    "subCategory": "Online Rates",
+    "price": 6995.0,
+    "nlc": null,
+    "image": null,
+    "description": ""
+  },
+  {
+    "id": "glen-prod-556",
+    "name": "SA 5025 Oven Toaster Grill Black",
+    "category": "Oven Toaster Griller",
+    "subCategory": "Online Rates",
+    "price": 8295.0,
+    "nlc": null,
+    "image": null,
+    "description": ""
+  },
+  {
+    "id": "glen-prod-557",
+    "name": "SA 5025 Oven Toaster Grill Rot Black",
+    "category": "Oven Toaster Griller",
+    "subCategory": "Online Rates",
+    "price": 8995.0,
+    "nlc": null,
+    "image": null,
+    "description": ""
+  },
+  {
+    "id": "glen-prod-558",
+    "name": "SA 5025 Oven Toaster Grill Rot+Con BL",
+    "category": "Oven Toaster Griller",
+    "subCategory": "Online Rates",
+    "price": 10495.0,
+    "nlc": null,
+    "image": null,
+    "description": ""
+  },
+  {
+    "id": "glen-prod-559",
+    "name": "SA 5035 Oven Toaster Grill Rot+Con Black",
+    "category": "Oven Toaster Griller",
+    "subCategory": "Online Rates",
+    "price": 11655.0,
+    "nlc": null,
+    "image": null,
+    "description": ""
+  },
+  {
+    "id": "glen-prod-560",
+    "name": "SA 9006 Electric Kettle DW Black 1.5 L",
+    "category": "Kettles",
+    "subCategory": "Online Rates",
+    "price": 2995.0,
+    "nlc": null,
+    "image": null,
+    "description": ""
+  },
+  {
+    "id": "glen-prod-561",
+    "name": "SA 9006 Electric Kettle DW Beige 1.5 L",
+    "category": "Kettles",
+    "subCategory": "Online Rates",
+    "price": 2995.0,
+    "nlc": null,
+    "image": null,
+    "description": ""
+  },
+  {
+    "id": "glen-prod-562",
+    "name": "SA 9007 Electric Kettle DW Black 1.8 L",
+    "category": "Kettles",
+    "subCategory": "Online Rates",
+    "price": 2995.0,
+    "nlc": null,
+    "image": null,
+    "description": ""
+  },
+  {
+    "id": "glen-prod-563",
+    "name": "SA-9012 Glass Tea Kettle 1.8 L",
+    "category": "Kettles",
+    "subCategory": "Online Rates",
+    "price": 2395.0,
+    "nlc": null,
+    "image": null,
+    "description": ""
+  },
+  {
+    "id": "glen-prod-564",
+    "name": "SA 9016 Multi Cook Kettle 1.5L 600W",
+    "category": "Kettles",
+    "subCategory": "Online Rates",
+    "price": 2995.0,
+    "nlc": null,
+    "image": null,
+    "description": ""
+  },
+  {
+    "id": "glen-prod-565",
+    "name": "SA 9052 Coffee Maker 0.75L",
+    "category": "Kettles",
+    "subCategory": "Online Rates",
+    "price": 2995.0,
+    "nlc": null,
+    "image": null,
+    "description": ""
+  },
+  {
+    "id": "glen-prod-566",
+    "name": "SA 9053 Coffee Maker 1.50L",
+    "category": "Kettles",
+    "subCategory": "Online Rates",
+    "price": 6995.0,
+    "nlc": null,
+    "image": null,
+    "description": ""
+  },
+  {
+    "id": "glen-prod-567",
+    "name": "Kitchen Sink Press SS 18169 R25 SB Matte",
+    "category": "Kitchen Sinks SS",
+    "subCategory": "Kitchen Sinks SS - Press",
+    "price": 7295.0,
+    "nlc": null,
+    "image": null,
+    "description": ""
+  },
+  {
+    "id": "glen-prod-568",
+    "name": "Kitchen Sink Press SS 21188 SB Matte",
+    "category": "Kitchen Sinks SS",
+    "subCategory": "Kitchen Sinks SS - Press",
+    "price": 7495.0,
+    "nlc": null,
+    "image": null,
+    "description": ""
+  },
+  {
+    "id": "glen-prod-569",
+    "name": "Kitchen Sink Press SS 24188 SB Matte",
+    "category": "Kitchen Sinks SS",
+    "subCategory": "Kitchen Sinks SS - Press",
+    "price": 8295.0,
+    "nlc": null,
+    "image": null,
+    "description": ""
+  },
+  {
+    "id": "glen-prod-570",
+    "name": "Kitchen Sink Press SS 24189 SB Matte",
+    "category": "Kitchen Sinks SS",
+    "subCategory": "Kitchen Sinks SS - Press",
+    "price": 8795.0,
+    "nlc": null,
+    "image": null,
+    "description": ""
+  },
+  {
+    "id": "glen-prod-571",
+    "name": "Kitchen Sink Press SS 24189 R25 SB Matte",
+    "category": "Kitchen Sinks SS",
+    "subCategory": "Kitchen Sinks SS - Press",
+    "price": 9395.0,
+    "nlc": null,
+    "image": null,
+    "description": ""
+  },
+  {
+    "id": "glen-prod-572",
+    "name": "Kitchen Sink Press SS 37189 R25 SB SD M",
+    "category": "Kitchen Sinks SS",
+    "subCategory": "Kitchen Sinks SS - Press",
+    "price": 14595.0,
+    "nlc": null,
+    "image": null,
+    "description": ""
+  },
+  {
+    "id": "glen-prod-573",
+    "name": "Kitchen Sink Press SS 36208 SB SD M",
+    "category": "Kitchen Sinks SS",
+    "subCategory": "Kitchen Sinks SS - Press",
+    "price": 13595.0,
+    "nlc": null,
+    "image": null,
+    "description": ""
+  },
+  {
+    "id": "glen-prod-574",
+    "name": "Kitchen Sink Press SS 40208 SB SD M",
+    "category": "Kitchen Sinks SS",
+    "subCategory": "Kitchen Sinks SS - Press",
+    "price": 14595.0,
+    "nlc": null,
+    "image": null,
+    "description": ""
+  },
+  {
+    "id": "glen-prod-575",
+    "name": "Kitchen Sink Press SS 37189 R25 DB Matte",
+    "category": "Kitchen Sinks SS",
+    "subCategory": "Kitchen Sinks SS - Press",
+    "price": 17295.0,
+    "nlc": null,
+    "image": null,
+    "description": ""
+  },
+  {
+    "id": "glen-prod-576",
+    "name": "Kitchen Sink Press SS 37189 R25 DB BS M",
+    "category": "Kitchen Sinks SS",
+    "subCategory": "Kitchen Sinks SS - Press",
+    "price": 17995.0,
+    "nlc": null,
+    "image": null,
+    "description": ""
+  },
+  {
+    "id": "glen-prod-577",
+    "name": "Kitchen Sink Press SS 45209 DB Matte",
+    "category": "Kitchen Sinks SS",
+    "subCategory": "Kitchen Sinks SS - Press",
+    "price": 21495.0,
+    "nlc": null,
+    "image": null,
+    "description": ""
+  },
+  {
+    "id": "glen-prod-578",
+    "name": "Kitchen Sink Press SS 45209 DB Gloss",
+    "category": "Kitchen Sinks SS",
+    "subCategory": "Kitchen Sinks SS - Press",
+    "price": 20995.0,
+    "nlc": null,
+    "image": null,
+    "description": ""
+  },
+  {
+    "id": "glen-prod-579",
+    "name": "Kitchen Sink Press SS 452010 R25 DB M",
+    "category": "Kitchen Sinks SS",
+    "subCategory": "Kitchen Sinks SS - Press",
+    "price": 24995.0,
+    "nlc": null,
+    "image": null,
+    "description": ""
+  },
+  {
+    "id": "glen-prod-580",
+    "name": "Kitchen Sink Handmade SS 18169 R10 SB M",
+    "category": "Kitchen Sinks SS",
+    "subCategory": "Kitchen Sinks SS - Handmade",
+    "price": 12995.0,
+    "nlc": null,
+    "image": null,
+    "description": ""
+  },
+  {
+    "id": "glen-prod-581",
+    "name": "Kitchen Sink Handmade SS 21189 R10 SB M",
+    "category": "Kitchen Sinks SS",
+    "subCategory": "Kitchen Sinks SS - Handmade",
+    "price": 13295.0,
+    "nlc": null,
+    "image": null,
+    "description": ""
+  },
+  {
+    "id": "glen-prod-582",
+    "name": "Kitchen Sink Handmade SS 24189 R10 SB M",
+    "category": "Kitchen Sinks SS",
+    "subCategory": "Kitchen Sinks SS - Handmade",
+    "price": 14595.0,
+    "nlc": null,
+    "image": null,
+    "description": ""
+  },
+  {
+    "id": "glen-prod-583",
+    "name": "Kitchen Sink Handmade SS 30189 R10 SB M",
+    "category": "Kitchen Sinks SS",
+    "subCategory": "Kitchen Sinks SS - Handmade",
+    "price": 17695.0,
+    "nlc": null,
+    "image": null,
+    "description": ""
+  },
+  {
+    "id": "glen-prod-584",
+    "name": "Kitchen Sink Handmade SS 45209 R10 DB M",
+    "category": "Kitchen Sinks SS",
+    "subCategory": "Kitchen Sinks SS - Handmade",
+    "price": 27995.0,
+    "nlc": null,
+    "image": null,
+    "description": ""
+  },
+  {
+    "id": "glen-prod-585",
+    "name": "Kitchen Sink HM SS 40209 R10 DB HalfFD M",
+    "category": "Kitchen Sinks SS",
+    "subCategory": "Kitchen Sinks SS - Handmade",
+    "price": 26995.0,
+    "nlc": null,
+    "image": null,
+    "description": ""
+  },
+  {
+    "id": "glen-prod-586",
+    "name": "Kitchen Sink HM SS 45209 R10 DB HalfFD M",
+    "category": "Kitchen Sinks SS",
+    "subCategory": "Kitchen Sinks SS - Handmade",
+    "price": 28995.0,
+    "nlc": null,
+    "image": null,
+    "description": ""
+  },
+  {
+    "id": "glen-prod-587",
+    "name": "Kitchen Sink Handmade SS 37189 R10 DB M",
+    "category": "Kitchen Sinks SS",
+    "subCategory": "Kitchen Sinks SS - Handmade",
+    "price": 24395.0,
+    "nlc": null,
+    "image": null,
+    "description": ""
+  },
+  {
+    "id": "glen-prod-588",
+    "name": "Kitchen Sink HM SS 37209 R10 DB HalfFD M",
+    "category": "Kitchen Sinks SS",
+    "subCategory": "Kitchen Sinks SS - Handmade",
+    "price": 26495.0,
+    "nlc": null,
+    "image": null,
+    "description": ""
+  },
+  {
+    "id": "glen-prod-589",
+    "name": "Kitchen Sink HM SS 42209 R10 DB HalfFD M",
+    "category": "Kitchen Sinks SS",
+    "subCategory": "Kitchen Sinks SS - Handmade",
+    "price": 28495.0,
+    "nlc": null,
+    "image": null,
+    "description": ""
+  },
+  {
+    "id": "glen-prod-590",
+    "name": "Kitchen Sink HM SS 36209 R10 SB SD 1.2 M",
+    "category": "Kitchen Sinks SS",
+    "subCategory": "Kitchen Sinks SS - Handmade",
+    "price": 25995.0,
+    "nlc": null,
+    "image": null,
+    "description": ""
+  },
+  {
+    "id": "glen-prod-591",
+    "name": "Kitchen Sink HM SS 24189 R10 SB FullFD M",
+    "category": "Kitchen Sinks SS",
+    "subCategory": "Kitchen Sinks SS - Handmade",
+    "price": 15495.0,
+    "nlc": null,
+    "image": null,
+    "description": ""
+  },
+  {
+    "id": "glen-prod-592",
+    "name": "Kitchen Sink HM SS 32189 R10 DB HalfFD M",
+    "category": "Kitchen Sinks SS",
+    "subCategory": "Kitchen Sinks SS - Handmade",
+    "price": 24795.0,
+    "nlc": null,
+    "image": null,
+    "description": ""
+  },
+  {
+    "id": "glen-prod-593",
+    "name": "Kitchen Sink Handmade SS 40209 R10 DB M",
+    "category": "Kitchen Sinks SS",
+    "subCategory": "Kitchen Sinks SS - Handmade",
+    "price": 26895.0,
+    "nlc": null,
+    "image": null,
+    "description": ""
+  },
+  {
+    "id": "glen-prod-594",
+    "name": "Kitchen Sink HM SS 37189 R10 DB HalfFD M",
+    "category": "Kitchen Sinks SS",
+    "subCategory": "Kitchen Sinks SS - Handmade",
+    "price": 26895.0,
+    "nlc": null,
+    "image": null,
+    "description": ""
+  },
+  {
+    "id": "glen-prod-595",
+    "name": "Kitchen Sink Quartz 18168 SB Black",
+    "category": "Kitchen Sinks SS",
+    "subCategory": "Kitchen Sinks Quartz",
+    "price": 8295.0,
+    "nlc": null,
+    "image": null,
+    "description": ""
+  },
+  {
+    "id": "glen-prod-596",
+    "name": "Kitchen Sink Quartz 18168 SB Beige",
+    "category": "Kitchen Sinks SS",
+    "subCategory": "Kitchen Sinks Quartz",
+    "price": 8295.0,
+    "nlc": null,
+    "image": null,
+    "description": ""
+  },
+  {
+    "id": "glen-prod-597",
+    "name": "Kitchen Sink Quartz 18168 SB Grey",
+    "category": "Kitchen Sinks SS",
+    "subCategory": "Kitchen Sinks Quartz",
+    "price": 8295.0,
+    "nlc": null,
+    "image": null,
+    "description": ""
+  },
+  {
+    "id": "glen-prod-598",
+    "name": "Kitchen Sink Quartz 21188 SB Black",
+    "category": "Kitchen Sinks SS",
+    "subCategory": "Kitchen Sinks Quartz",
+    "price": 10395.0,
+    "nlc": null,
+    "image": null,
+    "description": ""
+  },
+  {
+    "id": "glen-prod-599",
+    "name": "Kitchen Sink Quartz 21188 SB Beige",
+    "category": "Kitchen Sinks SS",
+    "subCategory": "Kitchen Sinks Quartz",
+    "price": 10395.0,
+    "nlc": null,
+    "image": null,
+    "description": ""
+  },
+  {
+    "id": "glen-prod-600",
+    "name": "Kitchen Sink Quartz 21188 SB Grey",
+    "category": "Kitchen Sinks SS",
+    "subCategory": "Kitchen Sinks Quartz",
+    "price": 10395.0,
+    "nlc": null,
+    "image": null,
+    "description": ""
+  },
+  {
+    "id": "glen-prod-601",
+    "name": "Kitchen Sink Quartz 24188 SB Black",
+    "category": "Kitchen Sinks SS",
+    "subCategory": "Kitchen Sinks Quartz",
+    "price": 10995.0,
+    "nlc": null,
+    "image": null,
+    "description": ""
+  },
+  {
+    "id": "glen-prod-602",
+    "name": "Kitchen Sink Quartz 24188 SB Beige",
+    "category": "Kitchen Sinks SS",
+    "subCategory": "Kitchen Sinks Quartz",
+    "price": 10995.0,
+    "nlc": null,
+    "image": null,
+    "description": ""
+  },
+  {
+    "id": "glen-prod-603",
+    "name": "Kitchen Sink Quartz 24188 SB Grey",
+    "category": "Kitchen Sinks SS",
+    "subCategory": "Kitchen Sinks Quartz",
+    "price": 10995.0,
+    "nlc": null,
+    "image": null,
+    "description": ""
+  },
+  {
+    "id": "glen-prod-604",
+    "name": "Kitchen Sink Quartz 36189 SBSD Black",
+    "category": "Kitchen Sinks SS",
+    "subCategory": "Kitchen Sinks Quartz",
+    "price": 19995.0,
+    "nlc": null,
+    "image": null,
+    "description": ""
+  },
+  {
+    "id": "glen-prod-605",
+    "name": "Kitchen Sink Quartz 36189 SBSD Beige",
+    "category": "Kitchen Sinks SS",
+    "subCategory": "Kitchen Sinks Quartz",
+    "price": 19995.0,
+    "nlc": null,
+    "image": null,
+    "description": ""
+  },
+  {
+    "id": "glen-prod-606",
+    "name": "Kitchen Sink Quartz 36189 SBSD Grey",
+    "category": "Kitchen Sinks SS",
+    "subCategory": "Kitchen Sinks Quartz",
+    "price": 19995.0,
+    "nlc": null,
+    "image": null,
+    "description": ""
+  },
+  {
+    "id": "glen-prod-607",
+    "name": "Kitchen Sink Quartz 45209 DB Black",
+    "category": "Kitchen Sinks SS",
+    "subCategory": "Kitchen Sinks Quartz",
+    "price": 26995.0,
+    "nlc": null,
+    "image": null,
+    "description": ""
+  },
+  {
+    "id": "glen-prod-608",
+    "name": "Kitchen Sink Quartz 45209 DB Beige",
+    "category": "Kitchen Sinks SS",
+    "subCategory": "Kitchen Sinks Quartz",
+    "price": 26995.0,
+    "nlc": null,
+    "image": null,
+    "description": ""
+  },
+  {
+    "id": "glen-prod-609",
+    "name": "Kitchen Sink Quartz 45209 DB Grey",
+    "category": "Kitchen Sinks SS",
+    "subCategory": "Kitchen Sinks Quartz",
+    "price": 26995.0,
+    "nlc": null,
+    "image": null,
+    "description": ""
+  },
+  {
+    "id": "glen-prod-610",
+    "name": "Kitchen Sink Quartz 31209 SB Black",
+    "category": "Kitchen Sinks SS",
+    "subCategory": "Kitchen Sinks Quartz",
+    "price": 18995.0,
+    "nlc": null,
+    "image": null,
+    "description": ""
+  },
+  {
+    "id": "glen-prod-611",
+    "name": "Kitchen Sink Quartz 31209 SB Beige",
+    "category": "Kitchen Sinks SS",
+    "subCategory": "Kitchen Sinks Quartz",
+    "price": 18995.0,
+    "nlc": null,
+    "image": null,
+    "description": ""
+  },
+  {
+    "id": "glen-prod-612",
+    "name": "Kitchen Sink Quartz 31209 SB Grey",
+    "category": "Kitchen Sinks SS",
+    "subCategory": "Kitchen Sinks Quartz",
+    "price": 18995.0,
+    "nlc": null,
+    "image": null,
+    "description": ""
+  },
+  {
+    "id": "glen-prod-613",
+    "name": "Kitchen Sink Quartz 34209 DB Black",
+    "category": "Kitchen Sinks SS",
+    "subCategory": "Kitchen Sinks Quartz",
+    "price": 22295.0,
+    "nlc": null,
+    "image": null,
+    "description": ""
+  },
+  {
+    "id": "glen-prod-614",
+    "name": "Kitchen Sink Quartz 34209 DB Beige",
+    "category": "Kitchen Sinks SS",
+    "subCategory": "Kitchen Sinks Quartz",
+    "price": 22295.0,
+    "nlc": null,
+    "image": null,
+    "description": ""
+  },
+  {
+    "id": "glen-prod-615",
+    "name": "Kitchen Sink Quartz 34209 DB Grey",
+    "category": "Kitchen Sinks SS",
+    "subCategory": "Kitchen Sinks Quartz",
+    "price": 22295.0,
+    "nlc": null,
+    "image": null,
+    "description": ""
+  },
+  {
+    "id": "glen-prod-616",
+    "name": "Kitchen Sink Quartz 46209 DBSD Black",
+    "category": "Kitchen Sinks SS",
+    "subCategory": "Kitchen Sinks Quartz",
+    "price": 34595.0,
+    "nlc": null,
+    "image": null,
+    "description": ""
+  },
+  {
+    "id": "glen-prod-617",
+    "name": "Kitchen Sink Quartz 46209 DBSD Beige",
+    "category": "Kitchen Sinks SS",
+    "subCategory": "Kitchen Sinks Quartz",
+    "price": 34595.0,
+    "nlc": null,
+    "image": null,
+    "description": ""
+  },
+  {
+    "id": "glen-prod-618",
+    "name": "Kitchen Sink Quartz 46209 DBSD Grey",
+    "category": "Kitchen Sinks SS",
+    "subCategory": "Kitchen Sinks Quartz",
+    "price": 34595.0,
+    "nlc": null,
     "image": null,
     "description": ""
   }
