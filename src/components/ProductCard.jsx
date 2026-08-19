@@ -1,19 +1,15 @@
-import React, { useState } from 'react';
-import { Plus, Check } from 'lucide-react';
+import React from 'react';
+import { Plus, Minus } from 'lucide-react';
 import { formatPrice } from '../utils/priceFormatter';
 import './ProductCard.css';
 
-export default function ProductCard({ product, onAddToCart }) {
-  const [isAdded, setIsAdded] = useState(false);
-
-  const handleAdd = () => {
-    onAddToCart(product);
-    setIsAdded(true);
-    setTimeout(() => {
-      setIsAdded(false);
-    }, 1200);
-  };
-
+export default function ProductCard({
+  product,
+  cartQuantity = 0,
+  onAddToCart,
+  onIncreaseQuantity,
+  onDecreaseQuantity
+}) {
   return (
     <div className="product-card">
       <div className="product-card-header">
@@ -35,23 +31,36 @@ export default function ProductCard({ product, onAddToCart }) {
             <span className="product-price">{formatPrice(product.price)}</span>
           </div>
 
-          <button
-            className={`add-to-cart-btn ${isAdded ? 'added' : ''}`}
-            onClick={handleAdd}
-            aria-label={`Add ${product.name} to cart`}
-          >
-            {isAdded ? (
-              <>
-                <Check size={16} />
-                <span>Added</span>
-              </>
-            ) : (
-              <>
-                <Plus size={16} />
-                <span>Add to Cart</span>
-              </>
-            )}
-          </button>
+          {cartQuantity > 0 ? (
+            <div className="product-qty-control">
+              <button
+                className="product-qty-btn"
+                onClick={() => onDecreaseQuantity(product.id)}
+                aria-label="Decrease quantity"
+              >
+                <Minus size={14} />
+              </button>
+
+              <span className="product-qty-value">{cartQuantity}</span>
+
+              <button
+                className="product-qty-btn"
+                onClick={() => onIncreaseQuantity(product.id)}
+                aria-label="Increase quantity"
+              >
+                <Plus size={14} />
+              </button>
+            </div>
+          ) : (
+            <button
+              className="add-to-cart-btn"
+              onClick={() => onAddToCart(product)}
+              aria-label={`Add ${product.name} to cart`}
+            >
+              <Plus size={16} />
+              <span>Add to Cart</span>
+            </button>
+          )}
         </div>
       </div>
     </div>

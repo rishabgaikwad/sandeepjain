@@ -5,7 +5,10 @@ import './ProductGrid.css';
 
 export default function ProductGrid({
   products,
+  cartMap = {},
   onAddToCart,
+  onIncreaseQuantity,
+  onDecreaseQuantity,
   onResetFilters,
   hasFilters
 }) {
@@ -30,7 +33,14 @@ export default function ProductGrid({
   return (
     <div className="product-grid">
       {products.map((product) => (
-        <ProductCard key={product.id} product={product} onAddToCart={onAddToCart} />
+        <ProductCard
+          key={product.id}
+          product={product}
+          cartQuantity={cartMap[product.id] || 0}
+          onAddToCart={onAddToCart}
+          onIncreaseQuantity={onIncreaseQuantity}
+          onDecreaseQuantity={onDecreaseQuantity}
+        />
       ))}
     </div>
   );

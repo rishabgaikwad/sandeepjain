@@ -111,10 +111,41 @@
   color: var(--accent-emerald);
 }
 
-.add-to-cart-btn.added {
+/* Quantity Control Widget on Product Card */
+.product-qty-control {
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+  background-color: var(--bg-input);
+  border: 1px solid var(--accent-emerald);
+  border-radius: var(--radius-full);
+  padding: 3px;
+}
+
+.product-qty-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  color: var(--accent-emerald);
+  transition: var(--transition-fast);
+  cursor: pointer;
+}
+
+.product-qty-btn:hover {
   background-color: var(--accent-emerald);
-  border-color: var(--accent-emerald);
   color: #ffffff;
+}
+
+.product-qty-value {
+  font-size: 0.875rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  min-width: 24px;
+  text-align: center;
+  padding: 0 4px;
 }
 
 @media (max-width: 640px) {
@@ -133,5 +164,15 @@
   .add-to-cart-btn {
     padding: 0.45rem 0.85rem;
     font-size: 0.775rem;
+  }
+
+  .product-qty-btn {
+    width: 26px;
+    height: 26px;
+  }
+
+  .product-qty-value {
+    font-size: 0.8125rem;
+    min-width: 20px;
   }
 }

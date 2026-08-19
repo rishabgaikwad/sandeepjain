@@ -30,6 +30,15 @@ export default function App() {
     cartTotal
   } = useCart();
 
+  // Map product IDs to their current cart quantity
+  const cartMap = useMemo(() => {
+    const map = {};
+    cart.forEach((item) => {
+      map[item.id] = item.quantity;
+    });
+    return map;
+  }, [cart]);
+
   // Non-intrusive add to cart: adds product without opening drawer
   const handleAddToCart = (product) => {
     addToCart(product);
@@ -149,7 +158,10 @@ export default function App() {
         {/* Product Grid */}
         <ProductGrid
           products={filteredProducts}
+          cartMap={cartMap}
           onAddToCart={handleAddToCart}
+          onIncreaseQuantity={increaseQuantity}
+          onDecreaseQuantity={decreaseQuantity}
           onResetFilters={handleResetFilters}
           hasFilters={selectedCategory !== 'All' || selectedSubCategory !== null || searchTerm.trim() !== ''}
         />
