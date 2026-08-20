@@ -45,26 +45,80 @@ export default function HomeView({
     }
   };
 
+  const handleSearchChange = (e) => {
+    const value = e.target.value;
+    setSearchTerm(value);
+  };
+
+  const handleSelectSearchResult = (product) => {
+    setSearchTerm(product.name);
+    onNavigateToProducts();
+  };
+
+  // Live matching products for dropdown auto-search
+  const searchResults = React.useMemo(() => {
+    if (!searchTerm.trim()) return [];
+    const query = searchTerm.toLowerCase().trim();
+    return products
+      .filter(
+        (p) =>
+          p.name.toLowerCase().includes(query) ||
+          p.category.toLowerCase().includes(query) ||
+          (p.subCategory && p.subCategory.toLowerCase().includes(query))
+      )
+      .slice(0, 6);
+  }, [products, searchTerm]);
+
   return (
     <div className="home-view">
-      {/* Search Input Bar */}
-      <form className="home-search-bar" onSubmit={handleSearchSubmit}>
-        <Search size={20} className="search-bar-icon" />
-        <input
-          type="text"
-          placeholder="Search products, categories..."
-          value={searchTerm}
-          onChange={(e) => setSearchTerm(e.target.value)}
-          onFocus={() => {
-            if (searchTerm.trim()) onNavigateToProducts();
-          }}
-        />
-        {searchTerm && (
-          <button type="button" className="search-go-btn" onClick={onNavigateToProducts} aria-label="Submit search">
-            <ArrowRight size={16} />
-          </button>
+      {/* Search Input Bar with Live Auto-Search Suggestions */}
+      <div className="home-search-container">
+        <form className="home-search-bar" onSubmit={handleSearchSubmit}>
+          <Search size={20} className="search-bar-icon" />
+          <input
+            type="text"
+            placeholder="Search products, categories..."
+            value={searchTerm}
+            onChange={handleSearchChange}
+          />
+          {searchTerm && (
+            <button type="button" className="search-go-btn" onClick={onNavigateToProducts} aria-label="Submit search">
+              <ArrowRight size={16} />
+            </button>
+          )}
+        </form>
+
+        {/* Live Auto-Search Suggestions Dropdown */}
+        {searchTerm.trim() !== '' && (
+          <div className="search-suggestions-dropdown">
+            {searchResults.length > 0 ? (
+              <>
+                {searchResults.map((product) => (
+                  <button
+                    key={product.id}
+                    className="suggestion-item"
+                    onClick={() => handleSelectSearchResult(product)}
+                  >
+                    <Search size={14} className="suggestion-icon" />
+                    <div className="suggestion-text">
+                      <span className="suggestion-name">{product.name}</span>
+                      <span className="suggestion-category">{product.category}</span>
+                    </div>
+                  </button>
+                ))}
+                <button className="view-all-results-btn" onClick={onNavigateToProducts}>
+                  <span>See all results for "{searchTerm}"</span>
+                  <ArrowRight size={14} />
+                </button>
+              </>
+            ) : (
+              <div className="no-suggestions-item">
+                No products found matching "{searchTerm}"
+              </div>
+            )}
+          </div>
         )}
-      </form>
+      </div>
 
       {/* Compact Premium Imageless Hero Banner */}
       <div className="hero-banner">
