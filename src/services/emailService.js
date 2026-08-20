@@ -1,39 +1,32 @@
-import emailjs from '@emailjs/browser';
 import storeConfig from '../config/storeConfig';
 import { formatOrderForEmail } from '../utils/orderFormatter';
 
 /**
- * Sends order notification email via EmailJS frontend SDK.
+ * Sends order notification email via Resend API.
  * @param {Object} order - Canonical order object
- * @returns {Promise<{success: boolean, message: string}>}
+ * @returns {Promise<{success: boolean, isConfigured: boolean, message: string}>}
  */
 export const sendOrderEmail = async (order) => {
-  const { serviceId, templateId, publicKey } = storeConfig.email;
-
-  // Check if configuration placeholders are still present
-  if (
-    !serviceId ||
-    !templateId ||
-    !publicKey ||
-    serviceId === 'YOUR_EMAILJS_SERVICE_ID' ||
-    templateId === 'YOUR_EMAILJS_TEMPLATE_ID' ||
-    publicKey === 'YOUR_EMAILJS_PUBLIC_KEY'
-  ) {
-    console.warn(
-      'EmailJS is not fully configured in storeConfig.js. Skipping actual email dispatch.'
-    );
-    return {
-      success: false,
-      isConfigured: false,
-      message: 'EmailJS keys are not configured in storeConfig.js.'
-    };
-  }
-
   try {
-    const templateParams = formatOrderForEmail(order);
-    const response = await emailjs.send(serviceId, templateId, templateParams, publicKey);
+    const emailData = formatOrderForEmail(order);
 
-    if (response.status === 200) {
+    const response = await fetch('/api/send-email', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json'
+      },
+      body: JSON.stringify({
+        storeConfig: {
+          storeName: storeConfig.storeName,
+          orderEmail: storeConfig.orderEmail
+        },
+        emailData
+      })
+    });
+
+    const data = await response.json().catch(() => ({}));
+
+    if (response.ok && data.success) {
       return {
         success: true,
         isConfigured: true,
@@ -43,15 +36,15 @@ export const sendOrderEmail = async (order) => {
       return {
         success: false,
         isConfigured: true,
-        message: `EmailJS responded with status code ${response.status}`
+        message: data.message || `API error code ${response.status}`
       };
     }
   } catch (error) {
-    console.error('EmailJS error:', error);
+    console.error('Email API error:', error);
     return {
       success: false,
       isConfigured: true,
-      message: error?.text || error?.message || 'Failed to send email through EmailJS.'
+      message: error?.message || 'Failed to send email through server API.'
     };
   }
 };

@@ -7,17 +7,15 @@ const storeConfig = {
   whatsappNumber: "919966410033",
 
   // Admin email address where email notifications will be sent
-  orderEmail: "rishabgaikwad2969@gmail.com",
+  orderEmail: "billingve@gmail.com",
 
   // Currency symbol used across the website
   currency: "₹",
 
-  // EmailJS Configuration (Frontend Public Keys)
-  // Register at https://www.emailjs.com/
-  email: {
-    serviceId: "YOUR_EMAILJS_SERVICE_ID",
-    templateId: "YOUR_EMAILJS_TEMPLATE_ID",
-    publicKey: "YOUR_EMAILJS_PUBLIC_KEY"
+  // Resend API Configuration (https://resend.com)
+  resend: {
+    // Verified sender email in Resend (default for testing is 'onboarding@resend.dev')
+    fromEmail: "onboarding@resend.dev"
   }
 };
 

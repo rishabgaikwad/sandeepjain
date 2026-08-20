@@ -9,6 +9,7 @@ import productsData from './data/products';
 import { CATEGORY_STRUCTURE } from './data/categories';
 import { useCart } from './hooks/useCart';
 import storeConfig from './config/storeConfig';
+import FloatingCartWidget from './components/FloatingCartWidget';
 import './App.css';
 
 export default function App() {
@@ -149,7 +150,16 @@ export default function App() {
         </div>
       </footer>
 
-      {/* 4. Mobile Fixed Bottom Navigation Bar */}
+      {/* 4. Floating Cart Widget popup when items exist */}
+      {activeTab !== 'cart' && (
+        <FloatingCartWidget
+          cartCount={cartItemCount}
+          cartTotal={cartTotal}
+          onOpenCart={() => handleTabChange('cart')}
+        />
+      )}
+
+      {/* 5. Mobile Fixed Bottom Navigation Bar */}
       <BottomNav
         activeTab={activeTab}
         setActiveTab={handleTabChange}

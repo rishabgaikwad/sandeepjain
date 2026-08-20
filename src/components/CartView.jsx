@@ -42,12 +42,6 @@ export default function CartView({
     if (!customerData.name || !customerData.name.trim()) {
       newErrors.name = 'Please enter your name';
     }
-    if (customerData.phone && customerData.phone.trim()) {
-      const cleanPhone = customerData.phone.replace(/[^0-9+]/g, '');
-      if (cleanPhone.length < 7) {
-        newErrors.phone = 'Please enter a valid phone number';
-      }
-    }
     setErrors(newErrors);
     return Object.keys(newErrors).length === 0;
   };
@@ -71,7 +65,6 @@ export default function CartView({
       customer: {
         name: customerData.name.trim(),
         phone: customerData.phone.trim(),
-        email: storeConfig.orderEmail,
         dealerName: customerData.dealerName.trim()
       },
       items: cart.map((item) => ({
@@ -266,7 +259,7 @@ export default function CartView({
             </div>
 
             <div className="form-group">
-              <label>Phone Number (WhatsApp) *</label>
+              <label>Phone Number (Optional)</label>
               <input
                 type="tel"
                 inputMode="tel"
@@ -274,9 +267,7 @@ export default function CartView({
                 placeholder="e.g. +91 98765 43210"
                 value={customerData.phone}
                 onChange={handleInputChange}
-                className={errors.phone ? 'error' : ''}
               />
-              {errors.phone && <span className="field-error">{errors.phone}</span>}
             </div>
 
             <div className="form-group">

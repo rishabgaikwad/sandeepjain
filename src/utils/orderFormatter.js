@@ -60,6 +60,7 @@ export const formatOrderForEmail = (order) => {
     store_name: storeConfig.storeName,
     customer_name: customer.name,
     customer_phone: customer.phone && customer.phone.trim() ? customer.phone.trim() : 'Not provided',
+    customer_dealer: customer.dealerName && customer.dealerName.trim() ? customer.dealerName.trim() : '',
     customer_email: customer.email && customer.email.trim() ? customer.email.trim() : 'Not provided',
     order_items: orderItemsFormatted,
     order_total: formatPrice(total),
