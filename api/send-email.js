@@ -4,7 +4,12 @@ export default async function handler(req, res) {
   }
 
   const apiKey = process.env.RESEND_API_KEY;
-  const { storeConfig, emailData } = req.body;
+  const { storeConfig, emailData } = req.body || {};
+
+  if (!apiKey) {
+    console.warn('Email skipped: RESEND_API_KEY is not configured in environment variables.');
+    return res.status(200).json({ success: false, message: 'RESEND_API_KEY is not configured.' });
+  }
 
   try {
     const response = await fetch('https://api.resend.com/emails', {

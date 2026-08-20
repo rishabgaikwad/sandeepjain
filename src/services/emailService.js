@@ -10,11 +10,15 @@ export const sendOrderEmail = async (order) => {
   try {
     const emailData = formatOrderForEmail(order);
 
+    const controller = new AbortController();
+    const timeoutId = setTimeout(() => controller.abort(), 6000);
+
     const response = await fetch('/api/send-email', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json'
       },
+      signal: controller.signal,
       body: JSON.stringify({
         storeConfig: {
           storeName: storeConfig.storeName,
@@ -23,6 +27,8 @@ export const sendOrderEmail = async (order) => {
         emailData
       })
     });
+
+    clearTimeout(timeoutId);
 
     const data = await response.json().catch(() => ({}));
 

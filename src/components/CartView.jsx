@@ -3,6 +3,7 @@ import { ShoppingBag, ArrowRight, Loader2, Trash2, Plus, Minus, ShieldCheck, Arr
 import ProductVisual from './ProductVisual';
 import { formatPrice } from '../utils/priceFormatter';
 import { sendOrderEmail } from '../services/emailService';
+import { sendOrderTelegram } from '../services/telegramService';
 import { openWhatsAppOrder } from '../utils/whatsapp';
 import storeConfig from '../config/storeConfig';
 import OrderSummary from './OrderSummary';
@@ -79,10 +80,21 @@ export default function CartView({
       createdAt: new Date().toISOString()
     };
 
-    // Step 1: Send EmailJS notification
-    const emailResult = await sendOrderEmail(canonicalOrder);
+    // Step 1: Concurrently dispatch Email and Telegram requests before opening WhatsApp
+    const [emailPromiseResult, telegramPromiseResult] = await Promise.allSettled([
+      sendOrderEmail(canonicalOrder),
+      sendOrderTelegram(canonicalOrder)
+    ]);
 
-    // Step 2: Open WhatsApp
+    const emailResult = emailPromiseResult.status === 'fulfilled'
+      ? emailPromiseResult.value
+      : { success: false, message: emailPromiseResult.reason?.message || 'Email dispatch failed' };
+
+    const telegramResult = telegramPromiseResult.status === 'fulfilled'
+      ? telegramPromiseResult.value
+      : { success: false, message: telegramPromiseResult.reason?.message || 'Telegram dispatch failed' };
+
+    // Step 2: Open WhatsApp after API requests have been dispatched
     const whatsappSuccess = openWhatsAppOrder(canonicalOrder);
 
     setIsSubmitting(false);
@@ -90,7 +102,8 @@ export default function CartView({
     setOrderStatus({
       order: canonicalOrder,
       emailResult,
-      whatsappSuccess
+      whatsappSuccess,
+      telegramResult
     });
   };
 
