@@ -1,6 +1,6 @@
 const storeConfig = {
   // The name of your store displayed in header, hero, and order emails/messages
-  storeName: "SANDEEP JAIN",
+  storeName: "Vardhaman Enterprise",
 
   // Admin WhatsApp number in international format WITHOUT '+' or spaces or dashes
   // Example: "919876543210" (NOT "+91 98765 43210")

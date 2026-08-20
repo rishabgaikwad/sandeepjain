@@ -121,6 +121,10 @@
     gap: 1rem;
   }
 
+  .nav-tab:not(.cart-nav-tab) {
+    display: none;
+  }
+
   .nav-tab {
     font-size: 0.85rem;
   }

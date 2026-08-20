@@ -18,19 +18,23 @@ export default function HomeView({
   // Top 6 featured products for Home showcase carousel
   const topProducts = products.slice(0, 6);
 
-  // Featured Category Circle Chips matching existing catalogue main categories
+  // Complete list of categories from CATEGORY_STRUCTURE
   const categoryChips = [
+    { name: 'Kitchen Sinks SS', displayName: 'Kitchen Sinks', icon: Waves },
     { name: 'Cook Tops', icon: Flame },
     { name: 'HOB', icon: Flame },
     { name: 'Cooker Hoods', icon: Wind },
-    { name: 'Kitchen Sinks SS', displayName: 'Kitchen Sinks', icon: Waves },
     { name: 'Toasters', icon: Zap },
     { name: 'Air Fryer', icon: Sparkles },
-    { name: 'Kettles', icon: Coffee },
+    { name: 'Steam Cooker', icon: CloudDrizzle },
+    { name: 'Induction Cooker', icon: Disc },
     { name: 'Food Preperation', displayName: 'Food Prep', icon: Utensils },
     { name: 'Oven Toaster Griller', displayName: 'OTG', icon: Box },
-    { name: 'Induction Cooker', icon: Disc },
-    { name: 'Steam Cooker', icon: CloudDrizzle },
+    { name: 'Tandoor', icon: Flame },
+    { name: 'Kettles', icon: Coffee },
+    { name: 'Easyclean & Island Chimney', displayName: 'Island Chimney', icon: Wind },
+    { name: 'Auto Clean Chimney', displayName: 'Auto Clean', icon: Wind },
+    { name: 'CR & Built-In Appliances', displayName: 'Built-In Apps', icon: Box },
     { name: 'Water heater', displayName: 'Geysers', icon: Thermometer },
   ];
 
@@ -79,9 +83,6 @@ export default function HomeView({
       <div className="home-section">
         <div className="section-header">
           <h3>Shop by Category</h3>
-          <button className="view-all-link" onClick={onNavigateToProducts}>
-            View all
-          </button>
         </div>
 
         <div className="category-circle-row">
@@ -103,15 +104,6 @@ export default function HomeView({
               </button>
             );
           })}
-          <button
-            className="category-circle-item"
-            onClick={onNavigateToProducts}
-          >
-            <div className="circle-icon-box more-box">
-              <Grid size={20} />
-            </div>
-            <span className="circle-label">More</span>
-          </button>
         </div>
       </div>
 
@@ -119,9 +111,6 @@ export default function HomeView({
       <div className="home-section">
         <div className="section-header">
           <h3>Top Products</h3>
-          <button className="view-all-link" onClick={onNavigateToProducts}>
-            View all
-          </button>
         </div>
 
         <div className="top-products-carousel-wrapper">
