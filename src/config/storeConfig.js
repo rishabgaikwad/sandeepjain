@@ -4,7 +4,7 @@ const storeConfig = {
 
   // Admin WhatsApp number in international format WITHOUT '+' or spaces or dashes
   // Example: "919876543210" (NOT "+91 98765 43210")
-  whatsappNumber: "919966410033",
+  whatsappNumber: "918977920400",
 
   // Admin email address where email notifications will be sent
   orderEmail: "billingve@gmail.com",
