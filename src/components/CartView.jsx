@@ -105,6 +105,9 @@ export default function CartView({
       whatsappSuccess,
       telegramResult
     });
+
+    // Clear the cart so the website is fresh for new orders
+    onClearCart();
   };
 
   const handleResetOrder = () => {

@@ -34,7 +34,7 @@ export default async function handler(req, res) {
     text += `\n<b>ITEMS:</b>\n${itemsList}\n\n`;
     text += `<b>Total Amount:</b> ₹${total}\n\n`;
     text += `<b>CUSTOMER DETAILS:</b>\n`;
-    text += `<b>Name:</b> ${escapeHtml(customer.name)}\n`;
+    text += `<b>Name: ${escapeHtml(customer.name)}</b>\n`;
     if (customer.phone && customer.phone.trim()) {
       text += `<b>Phone:</b> ${escapeHtml(customer.phone.trim())}\n`;
     }

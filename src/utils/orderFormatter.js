@@ -7,36 +7,39 @@ import { formatPrice } from './priceFormatter';
  * @returns {string} Plain text formatted message for WhatsApp
  */
 export const formatOrderForWhatsApp = (order) => {
-  const { customer, items, total, note } = order;
+  const { customer, items, total, note, storeName, createdAt } = order;
+  const actualStoreName = storeName || storeConfig.storeName;
 
-  let message = `Hello, I would like to place an order from *${storeConfig.storeName}*.\n\n`;
-  message += `*ORDER DETAILS*\n`;
+  let message = `*NEW WEBSITE ORDER*\n`;
+  if (actualStoreName) {
+    message += `*Store:* ${actualStoreName}\n`;
+  }
 
+  message += `\n*ITEMS:*\n`;
   items.forEach((item, index) => {
-    message += `${index + 1}. ${item.name}\n`;
-    message += `   Qty: ${item.quantity}\n`;
-    message += `   Price: ${formatPrice(item.price)}\n`;
-    message += `   Subtotal: ${formatPrice(item.subtotal)}\n\n`;
+    message += `${index + 1}. *${item.name}* × ${item.quantity} - ${formatPrice(item.subtotal)}\n`;
   });
 
-  message += `--------------------\n`;
-  message += `*TOTAL: ${formatPrice(total)}*\n`;
-  message += `--------------------\n\n`;
+  message += `\n*Total Amount:* ${formatPrice(total)}\n\n`;
 
-  message += `*CUSTOMER DETAILS*\n`;
-  message += `Name: ${customer.name}\n`;
-  if (customer.phone && customer.phone.trim() !== '') {
-    message += `Phone: ${customer.phone.trim()}\n`;
+  message += `*CUSTOMER DETAILS:*\n`;
+  message += `*Name: ${customer.name}*\n`;
+  if (customer.phone && customer.phone.trim()) {
+    message += `*Phone:* ${customer.phone.trim()}\n`;
   }
-  if (customer.email && customer.email.trim() !== '') {
-    message += `Email: ${customer.email.trim()}\n`;
+  if (customer.dealerName && customer.dealerName.trim()) {
+    message += `*Dealer:* ${customer.dealerName.trim()}\n`;
   }
-
-  if (note && note.trim() !== '') {
-    message += `\n*Customer Note:*\n${note.trim()}\n`;
+  if (customer.email && customer.email.trim()) {
+    message += `*Email:* ${customer.email.trim()}\n`;
   }
 
-  message += `\nThank you!`;
+  if (note && note.trim()) {
+    message += `\n*Order Note:*\n${note.trim()}\n`;
+  }
+
+  const orderDate = createdAt ? new Date(createdAt).toLocaleString() : new Date().toLocaleString();
+  message += `\n_Date: ${orderDate}_`;
 
   return message;
 };
